@@ -1,0 +1,10 @@
+{
+  "name": "seoul-cinema-calendar",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "mock": "node scripts/update.mjs --mock --in=none --out=docs/data/sample.json"
+  }
+}

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>서울 개봉 캘린더</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎟️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #e6eaee;
+  --surface: #f7f8fa;
+  --ink: #16202a;
+  --muted: #5a6571;
+  --rule: #c4ccd5;
+  --new: #b21f2d;
+  --re: #17676a;
+  --on-accent: #ffffff;
+  --display: 'Black Han Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  --text: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', system-ui, sans-serif;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #13181e; --surface: #1b222a; --ink: #e5e9ed; --muted: #98a3af;
+    --rule: #33404c; --new: #e2545e; --re: #4fa9ac; --on-accent: #0f1418;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #13181e; --surface: #1b222a; --ink: #e5e9ed; --muted: #98a3af;
+  --rule: #33404c; --new: #e2545e; --re: #4fa9ac; --on-accent: #0f1418;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 12px); }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 15px/1.55 var(--text); -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--paper);
+}
+button, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 20px 16px 48px; }
+
+/* 상단 */
+.top { display: grid; gap: 14px; margin-bottom: 20px; }
+.brand { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.brand h1 { margin: 0; font-size: 15px; font-weight: 600; }
+.updated { margin: 0; font-size: 13px; color: var(--muted); }
+.notice { margin: 0; padding: 10px 12px; border-left: 3px solid var(--new); background: var(--surface); font-size: 14px; }
+.notice p { margin: 0; }
+.notice p + p { margin-top: 4px; }
+
+.monthbar { display: flex; align-items: center; gap: 8px; }
+.monthbar h2 { margin: 0 6px; display: flex; align-items: baseline; gap: 10px; min-width: 0; }
+.monthbar .m { font: 400 clamp(48px, 11vw, 76px)/0.95 var(--display); letter-spacing: -0.01em; }
+.monthbar .y { font-size: 15px; color: var(--muted); font-weight: 500; }
+.icon-btn {
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--rule);
+  background: transparent; font-size: 22px; line-height: 1; cursor: pointer; flex: none;
+}
+.icon-btn:hover { background: var(--surface); }
+.text-btn {
+  margin-left: auto; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--rule);
+  background: transparent; cursor: pointer; font-size: 14px;
+}
+.text-btn:hover { background: var(--surface); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+.filters input { position: absolute; opacity: 0; pointer-events: none; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; padding: 3px; }
+.seg span { display: block; padding: 5px 14px; border-radius: 999px; font-size: 14px; cursor: pointer; }
+.seg input:checked + span { background: var(--ink); color: var(--paper); }
+.seg input:focus-visible + span, .chains input:focus-visible + span, .toggle input:focus-visible + span {
+  outline: 2px solid var(--ink); outline-offset: 2px;
+}
+.chains { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+.chains span {
+  display: block; padding: 5px 12px; border-radius: 999px; font-size: 14px; cursor: pointer;
+  border: 1px solid var(--rule); color: var(--muted); text-decoration: line-through;
+}
+.chains input:checked + span { color: var(--ink); text-decoration: none; border-color: var(--ink); }
+.toggle span { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer; }
+.toggle span::before {
+  content: ""; width: 16px; height: 16px; border: 1.5px solid var(--muted); border-radius: 4px;
+}
+.toggle input:checked + span::before {
+  background: var(--ink); border-color: var(--ink);
+  box-shadow: inset 0 0 0 3px var(--paper);
+}
+
+/* 본문 배치 */
+.layout { display: grid; gap: 20px; }
+@media (min-width: 880px) {
+  .layout { grid-template-columns: 280px 1fr; align-items: start; gap: 32px; }
+  .mini { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
+}
+
+/* 미니 달력 */
+.mini { background: var(--surface); border-radius: 10px; padding: 12px; }
+.mini .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.mini .wd { text-align: center; font-size: 12px; color: var(--muted); padding-bottom: 4px; }
+.mini button, .mini .blank {
+  aspect-ratio: 1 / 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; border: 0; background: transparent; border-radius: 8px; font-size: 14px; padding: 0;
+}
+.mini button { cursor: pointer; }
+.mini button:disabled { cursor: default; color: var(--muted); opacity: .55; }
+.mini button:not(:disabled):hover { background: var(--paper); }
+.mini button.is-today { box-shadow: inset 0 0 0 1.5px var(--ink); font-weight: 600; }
+.marks { display: flex; gap: 2px; height: 4px; }
+.marks i { width: 6px; height: 4px; border-radius: 2px; background: var(--new); }
+.marks i.re { background: var(--re); }
+.marks i.pending { background: transparent; box-shadow: inset 0 0 0 1px var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 10px 2px 0; font-size: 12px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 10px; height: 4px; border-radius: 2px; background: var(--new); }
+.legend i.re { background: var(--re); }
+.legend i.pending { background: transparent; box-shadow: inset 0 0 0 1px var(--muted); }
+
+/* 날짜 = 티켓 한 장 */
+.agenda { display: grid; gap: 14px; min-width: 0; }
+.day { position: relative; display: grid; grid-template-columns: 76px minmax(0, 1fr); background: var(--surface); border-radius: 8px; }
+.stub { position: relative; padding: 16px 0; text-align: center; border-right: 2px dashed var(--rule); }
+.stub::before, .stub::after {
+  content: ""; position: absolute; right: -9px; width: 16px; height: 16px; border-radius: 50%; background: var(--paper);
+}
+.stub::before { top: -8px; }
+.stub::after { bottom: -8px; }
+.stub .n { display: block; font: 400 44px/1 var(--display); }
+.stub .w { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
+.day.is-today .stub .w { color: var(--ink); font-weight: 600; }
+.films { display: grid; min-width: 0; }
+.film { padding: 14px 16px; border-top: 1px solid var(--rule); }
+.film:first-child { border-top: 0; }
+.film summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; }
+.film summary::-webkit-details-marker { display: none; }
+.film summary .plus {
+  grid-column: 2; grid-row: 1 / span 3; align-self: center; width: 28px; height: 28px;
+  border: 1px solid var(--rule); border-radius: 50%; display: grid; place-items: center; font-size: 18px;
+  transition: transform .2s ease;
+}
+.film[open] summary .plus { transform: rotate(45deg); }
+.head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.head h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.35; }
+.badge { flex: none; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 4px; background: var(--new); color: var(--on-accent); }
+.kind-re .badge { background: var(--re); }
+.meta { margin: 3px 0 0; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0 10px; }
+.note { margin: 3px 0 0; font-size: 13px; color: var(--muted); font-style: italic; }
+.where { margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 13px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--rule); }
+.chip b { font-weight: 600; margin-left: 3px; }
+.pending .where { font-size: 13px; color: var(--muted); }
+.ended h3 { color: var(--muted); }
+.theaters { margin: 12px 0 2px; display: grid; gap: 8px; }
+.theaters dl { margin: 0; display: grid; grid-template-columns: 92px 1fr; gap: 2px 10px; font-size: 14px; }
+.theaters dt { color: var(--muted); }
+.theaters dd { margin: 0; }
+
+.past { background: transparent; }
+.past > summary {
+  cursor: pointer; list-style: none; padding: 12px 14px; border: 1px dashed var(--rule); border-radius: 8px;
+  color: var(--muted); font-size: 14px;
+}
+.past > summary::-webkit-details-marker { display: none; }
+.past[open] > summary { margin-bottom: 14px; }
+.past .days { display: grid; gap: 14px; opacity: .72; }
+
+.empty { padding: 28px 20px; background: var(--surface); border-radius: 8px; }
+.empty h3 { margin: 0 0 6px; font-size: 16px; }
+.empty p { margin: 0; color: var(--muted); font-size: 14px; max-width: 46ch; }
+
+footer { margin-top: 36px; font-size: 13px; color: var(--muted); max-width: 70ch; }
+footer p { margin: 0 0 4px; }
+
+@media (max-width: 879px) {
+  .mini button, .mini .blank { aspect-ratio: auto; height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+@media (max-width: 420px) {
+  .day { grid-template-columns: 62px minmax(0, 1fr); }
+  .stub .n { font-size: 36px; }
+  .film { padding: 12px 12px; }
+  .theaters dl { grid-template-columns: 1fr; }
+  .theaters dt { margin-top: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>서울 개봉 캘린더</h1>
+      <p class="updated" id="updated"></p>
+    </div>
+    <div class="notice" id="notice" hidden></div>
+    <nav class="monthbar" aria-label="달 이동">
+      <button class="icon-btn" id="prev" aria-label="이전 달">‹</button>
+      <h2 id="month" aria-live="polite"></h2>
+      <button class="icon-btn" id="next" aria-label="다음 달">›</button>
+      <button class="text-btn" id="go-today">오늘</button>
+    </nav>
+    <div class="filters">
+      <div class="seg" role="radiogroup" aria-label="종류">
+        <label><input type="radio" name="kind" value="all" checked><span>전체</span></label>
+        <label><input type="radio" name="kind" value="new"><span>개봉</span></label>
+        <label><input type="radio" name="kind" value="re"><span>재개봉</span></label>
+      </div>
+      <div class="chains" role="group" aria-label="영화관">
+        <label><input type="checkbox" name="chain" value="cgv" checked><span>CGV</span></label>
+        <label><input type="checkbox" name="chain" value="lotte" checked><span>롯데시네마</span></label>
+        <label><input type="checkbox" name="chain" value="megabox" checked><span>메가박스</span></label>
+        <label><input type="checkbox" name="chain" value="indie" checked><span>독립·예술</span></label>
+      </div>
+      <label class="toggle"><input type="checkbox" id="pending" checked><span>상영관 미정 포함</span></label>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="mini" id="mini" aria-label="이달 달력"></aside>
+    <section class="agenda" id="agenda" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>개봉일과 감독·국가·장르는 영화진흥위원회 KOBIS, 상영관은 CGV·롯데시네마·메가박스·디트릭스 예매 화면의 공개 정보로 매일 새벽 갱신해요.</p>
+    <p>정확한 시간표와 예매는 각 극장에서 확인하세요.</p>
+  </footer>
+</div>
+
+<script>
+const CHAINS = [
+  ['cgv', 'CGV'], ['lotte', '롯데시네마'], ['megabox', '메가박스'], ['indie', '독립·예술'],
+];
+const SOURCE_NAMES = {
+  cgv: 'CGV', lotte: '롯데시네마', megabox: '메가박스', dtryx: '독립·예술영화관', kobis: 'KOBIS',
+};
+const WEEK = ['일', '월', '화', '수', '목', '금', '토'];
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const seoulToday = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(new Date());
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+let DATA = { films: [], status: {} };
+let TODAY = seoulToday();
+const state = { month: TODAY.slice(0, 7), kind: 'all', chains: new Set(CHAINS.map((c) => c[0])), pending: true };
+
+const count = (f) => CHAINS.reduce((n, [c]) => n + (f.theaters?.[c]?.length || 0), 0);
+
+function matches(f) {
+  if (state.kind !== 'all' && f.kind !== state.kind) return false;
+  if (f.scheduledOnly) return state.pending;
+  return CHAINS.some(([c]) => state.chains.has(c) && f.theaters?.[c]?.length);
+}
+
+function shiftMonth(month, n) {
+  const [y, m] = month.split('-').map(Number);
+  const d = new Date(Date.UTC(y, m - 1 + n, 1));
+  return d.toISOString().slice(0, 7);
+}
+
+function filmHTML(f) {
+  const meta = [];
+  if (f.kind === 're' && f.originalYear) meta.push(`${f.originalYear}년 작품`);
+  if (f.kobis?.director && f.kobis.director !== '-') meta.push(`감독 ${f.kobis.director}`);
+  if (f.kobis?.nation) meta.push(f.kobis.nation);
+  if (f.kobis?.genre) meta.push(f.kobis.genre);
+  const notes = [];
+  if (f.approx) notes.push('달력을 켜기 전부터 상영 중이라 날짜가 정확하지 않을 수 있어요');
+  else if (!f.scheduledOnly && !f.playing) notes.push('지금은 상영하지 않아요');
+  const head = `
+    <div class="head"><span class="badge">${f.kind === 're' ? '재개봉' : '개봉'}</span><h3>${esc(f.title)}</h3></div>
+    ${meta.length ? `<p class="meta">${meta.map((m) => `<span>${esc(m)}</span>`).join('')}</p>` : ''}
+    ${notes.length ? `<p class="note">${esc(notes.join(' '))}</p>` : ''}`;
+  const cls = `film kind-${f.kind}${f.scheduledOnly ? ' pending' : ''}${!f.playing && !f.scheduledOnly ? ' ended' : ''}`;
+
+  if (f.scheduledOnly) {
+    return `<article class="${cls}">${head}<p class="where">상영관 미정 · KOBIS 개봉 예정일 기준</p></article>`;
+  }
+  const chips = CHAINS.filter(([c]) => f.theaters[c]?.length)
+    .map(([c, name]) => `<span class="chip">${name}<b>${f.theaters[c].length}</b></span>`).join('');
+  const lists = CHAINS.filter(([c]) => f.theaters[c]?.length)
+    .map(([c, name]) => `<dt>${name}</dt><dd>${f.theaters[c].map(esc).join(', ')}</dd>`).join('');
+  return `<details class="${cls}">
+    <summary>${head}<div class="where">${chips}</div><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="theaters"><dl>${lists}</dl></div>
+  </details>`;
+}
+
+function dayHTML(date, films) {
+  const d = new Date(`${date}T00:00:00`);
+  const sorted = [...films].sort((a, b) =>
+    (a.scheduledOnly - b.scheduledOnly) || (count(b) - count(a)) || a.title.localeCompare(b.title, 'ko'));
+  return `<section class="day${date === TODAY ? ' is-today' : ''}" id="d-${date}" aria-label="${d.getMonth() + 1}월 ${d.getDate()}일">
+    <div class="stub"><span class="n">${d.getDate()}</span><span class="w">${date === TODAY ? '오늘' : `${WEEK[d.getDay()]}요일`}</span></div>
+    <div class="films">${sorted.map(filmHTML).join('')}</div>
+  </section>`;
+}
+
+function renderMini(byDate) {
+  const [y, m] = state.month.split('-').map(Number);
+  const first = new Date(y, m - 1, 1).getDay();
+  const days = new Date(y, m, 0).getDate();
+  let cells = WEEK.map((w) => `<div class="wd">${w}</div>`).join('');
+  cells += '<div class="blank"></div>'.repeat(first);
+  for (let i = 1; i <= days; i++) {
+    const date = `${state.month}-${String(i).padStart(2, '0')}`;
+    const films = byDate.get(date) || [];
+    const marks = films.slice(0, 4).map((f) => `<i class="${f.scheduledOnly ? 'pending' : f.kind === 're' ? 're' : ''}"></i>`).join('');
+    cells += `<button type="button" data-date="${date}" class="${date === TODAY ? 'is-today' : ''}" ${films.length ? '' : 'disabled'}
+      aria-label="${m}월 ${i}일${films.length ? `, ${films.length}편` : ''}">${i}<span class="marks">${marks}</span></button>`;
+  }
+  $('#mini').innerHTML = `<div class="grid">${cells}</div>
+    <div class="legend"><span><i></i>개봉</span><span><i class="re"></i>재개봉</span><span><i class="pending"></i>상영관 미정</span></div>`;
+}
+
+function render() {
+  const [y, m] = state.month.split('-').map(Number);
+  $('#month').innerHTML = `<span class="m">${m}월</span><span class="y">${y}</span>`;
+  const films = DATA.films.filter((f) => f.date.startsWith(state.month) && matches(f));
+  const byDate = new Map();
+  for (const f of films) byDate.set(f.date, [...(byDate.get(f.date) || []), f]);
+  renderMini(byDate);
+
+  const dates = [...byDate.keys()].sort();
+  if (!dates.length) {
+    const any = DATA.films.some((f) => f.date.startsWith(state.month));
+    $('#agenda').innerHTML = any
+      ? `<div class="empty"><h3>조건에 맞는 영화가 없어요</h3><p>위의 종류나 영화관 선택을 넓혀 보세요.</p></div>`
+      : `<div class="empty"><h3>이 달에 잡힌 개봉작이 아직 없어요</h3><p>극장 상영 일정은 보통 개봉 1~2주 전에 열려요. 그보다 먼 날짜는 KOBIS 개봉 예정 정보가 들어오는 대로 채워져요.</p></div>`;
+    return;
+  }
+  const past = dates.filter((d) => d < TODAY);
+  const rest = dates.filter((d) => d >= TODAY);
+  let html = '';
+  if (past.length && rest.length) {
+    const n = past.reduce((s, d) => s + byDate.get(d).length, 0);
+    const from = Number(past[0].slice(8)), to = Number(past.at(-1).slice(8));
+    html += `<details class="past"><summary>지난 날짜 ${from === to ? `${from}일` : `${from}일~${to}일`}, ${n}편 보기</summary>
+      <div class="days">${past.map((d) => dayHTML(d, byDate.get(d))).join('')}</div></details>`;
+  } else {
+    html += past.map((d) => dayHTML(d, byDate.get(d))).join('');
+  }
+  html += rest.map((d) => dayHTML(d, byDate.get(d))).join('');
+  $('#agenda').innerHTML = html;
+}
+
+function renderHeader() {
+  if (DATA.updatedAt) {
+    const t = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+      .format(new Date(DATA.updatedAt));
+    $('#updated').textContent = `${t} 업데이트`;
+  }
+  const lines = [];
+  if (DATA.sample) lines.push('샘플 데이터예요. 실제 상영 정보가 아니에요.');
+  const failed = Object.entries(DATA.status || {}).filter(([, s]) => !s.ok).map(([k]) => k);
+  const theaterFails = failed.filter((k) => k !== 'kobis').map((k) => SOURCE_NAMES[k]);
+  if (theaterFails.length) lines.push(`마지막 업데이트에서 ${theaterFails.join(', ')} 정보를 받지 못해 이전 정보를 보여주고 있어요.`);
+  if (failed.includes('kobis')) lines.push('KOBIS 정보를 받지 못해 새 영화의 개봉일은 첫 상영일 기준이에요.');
+  if (lines.length) {
+    $('#notice').innerHTML = lines.map((l) => `<p>${esc(l)}</p>`).join('');
+    $('#notice').hidden = false;
+  }
+}
+
+function jumpTo(date) {
+  const past = document.querySelector('.past');
+  if (past && date < TODAY) past.open = true;
+  document.getElementById(`d-${date}`)?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+}
+
+$('#prev').addEventListener('click', () => { state.month = shiftMonth(state.month, -1); render(); });
+$('#next').addEventListener('click', () => { state.month = shiftMonth(state.month, 1); render(); });
+$('#go-today').addEventListener('click', () => {
+  state.month = TODAY.slice(0, 7);
+  render();
+  const next = [...document.querySelectorAll('.agenda > .day')].find((el) => el.id.slice(2) >= TODAY);
+  if (next) jumpTo(next.id.slice(2));
+});
+document.querySelectorAll('input[name="kind"]').forEach((el) =>
+  el.addEventListener('change', () => { state.kind = el.value; render(); }));
+document.querySelectorAll('input[name="chain"]').forEach((el) =>
+  el.addEventListener('change', () => { el.checked ? state.chains.add(el.value) : state.chains.delete(el.value); render(); }));
+$('#pending').addEventListener('change', (e) => { state.pending = e.target.checked; render(); });
+$('#mini').addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-date]');
+  if (b && !b.disabled) jumpTo(b.dataset.date);
+});
+
+(async function init() {
+  try {
+    const file = new URLSearchParams(location.search).has('sample') ? 'data/sample.json' : 'data/films.json';
+    DATA = window.__FILMS__ || await fetch(file, { cache: 'no-store' }).then((r) => {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    });
+  } catch {
+    $('#notice').innerHTML = '<p>데이터 파일을 읽지 못했어요. 자동 업데이트가 한 번 이상 실행됐는지 확인하세요.</p>';
+    $('#notice').hidden = false;
+  }
+  if (DATA.sample && DATA.today) {
+    TODAY = DATA.today;
+    state.month = TODAY.slice(0, 7);
+  }
+  renderHeader();
+  render();
+})();
+</script>
+</body>
+</html>

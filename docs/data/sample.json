@@ -1,0 +1,452 @@
+{
+ "updatedAt": "2026-11-08T16:38:28.177Z",
+ "today": "2026-11-09",
+ "startedOn": "2026-11-07",
+ "sample": true,
+ "status": {
+  "cgv": {
+   "ok": true,
+   "theaters": 10,
+   "showings": 247,
+   "warning": null
+  },
+  "lotte": {
+   "ok": true,
+   "theaters": 7,
+   "showings": 153,
+   "warning": null
+  },
+  "megabox": {
+   "ok": true,
+   "theaters": 7,
+   "showings": 144,
+   "warning": null
+  },
+  "dtryx": {
+   "ok": true,
+   "theaters": 5,
+   "showings": 66,
+   "warning": null
+  },
+  "kobis": {
+   "ok": true,
+   "movies": 10
+  }
+ },
+ "films": [
+  {
+   "id": "물결의기록@2026-10-12",
+   "key": "물결의기록",
+   "title": "물결의 기록",
+   "kind": "new",
+   "date": "2026-10-12",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20251010",
+    "title": "물결의 기록",
+    "openDt": "2026-10-12",
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "윤하람"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모",
+     "에무시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "레드팜플릿@2026-10-26",
+   "key": "레드팜플릿",
+   "title": "레드 팜플릿",
+   "kind": "new",
+   "date": "2026-10-26",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261001",
+    "title": "레드 팜플릿",
+    "openDt": "2026-10-26",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "스릴러",
+    "director": "에밀리 하트"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "대학로",
+     "목동",
+     "상봉",
+     "신촌아트레온",
+     "압구정",
+     "영등포",
+     "왕십리",
+     "용산아이파크몰"
+    ],
+    "lotte": [
+     "건대입구",
+     "김포공항",
+     "노원",
+     "월드타워",
+     "은평(롯데몰)",
+     "홍대입구"
+    ],
+    "megabox": [
+     "상암월드컵경기장",
+     "성수",
+     "신촌",
+     "코엑스",
+     "홍대"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "스타필드두번째궤도@2026-11-02",
+   "key": "스타필드두번째궤도",
+   "title": "스타필드: 두 번째 궤도",
+   "kind": "new",
+   "date": "2026-11-02",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261002",
+    "title": "스타필드: 두 번째 궤도",
+    "openDt": "2026-11-02",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "SF",
+    "director": "마커스 리"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "대학로",
+     "목동",
+     "상봉",
+     "신촌아트레온",
+     "압구정",
+     "영등포",
+     "왕십리",
+     "용산아이파크몰",
+     "천호"
+    ],
+    "lotte": [
+     "건대입구",
+     "김포공항",
+     "노원",
+     "신림",
+     "월드타워",
+     "은평(롯데몰)",
+     "홍대입구"
+    ],
+    "megabox": [
+     "동대문",
+     "목동",
+     "상암월드컵경기장",
+     "성수",
+     "신촌",
+     "코엑스",
+     "홍대"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "가을산책@2026-11-07",
+   "key": "가을산책",
+   "title": "가을 산책",
+   "kind": "new",
+   "date": "2026-11-07",
+   "dateSource": "schedule",
+   "approx": true,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "강남",
+     "왕십리",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "성수",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": false,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-08"
+  },
+  {
+   "id": "겨울정류장@2026-11-10",
+   "key": "겨울정류장",
+   "title": "겨울 정류장",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261003",
+    "title": "겨울 정류장",
+    "openDt": "2026-11-10",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "한지원"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "대학로",
+     "목동",
+     "신촌아트레온",
+     "압구정",
+     "영등포",
+     "왕십리",
+     "용산아이파크몰"
+    ],
+    "lotte": [
+     "건대입구",
+     "김포공항",
+     "월드타워",
+     "은평(롯데몰)",
+     "홍대입구"
+    ],
+    "megabox": [
+     "목동",
+     "상암월드컵경기장",
+     "성수",
+     "신촌",
+     "코엑스",
+     "홍대"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "녹색우산@2026-11-10",
+   "key": "녹색우산",
+   "title": "녹색 우산",
+   "kind": "re",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1998,
+   "kobis": {
+    "movieCd": "19980001",
+    "title": "녹색 우산",
+    "openDt": "1998-07-04",
+    "prdtYear": 1998,
+    "nation": "한국",
+    "genre": "멜로/로맨스",
+    "director": "이경수"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [
+     "건대입구",
+     "월드타워"
+    ],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모",
+     "에무시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "작은섬의편지@2026-11-10",
+   "key": "작은섬의편지",
+   "title": "작은 섬의 편지",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261004",
+    "title": "작은 섬의 편지",
+    "openDt": "2026-11-10",
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "오세린"
+   },
+   "theaters": {
+    "cgv": [
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "라이카시네마",
+     "아트하우스모모",
+     "에무시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "낮은지붕들@2026-11-11",
+   "key": "낮은지붕들",
+   "title": "낮은 지붕들",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1987,
+   "kobis": {
+    "movieCd": "19870002",
+    "title": "낮은 지붕들",
+    "openDt": "1987-03-14",
+    "prdtYear": 1987,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "박상호"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-07",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "밤의항구@kobis-20261006",
+   "key": "밤의항구",
+   "title": "밤의 항구",
+   "kind": "re",
+   "date": "2026-11-17",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": 1991,
+   "kobis": {
+    "movieCd": "20261006",
+    "title": "밤의 항구",
+    "openDt": "2026-11-17",
+    "prdtYear": 1991,
+    "nation": "홍콩",
+    "genre": "멜로/로맨스",
+    "director": "진가위"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": false,
+   "scheduledOnly": true,
+   "firstSeen": "2026-11-07",
+   "lastSeen": null
+  },
+  {
+   "id": "푸른밤의소녀@kobis-20261005",
+   "key": "푸른밤의소녀",
+   "title": "푸른 밤의 소녀",
+   "kind": "new",
+   "date": "2026-11-17",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261005",
+    "title": "푸른 밤의 소녀",
+    "openDt": "2026-11-17",
+    "prdtYear": 2025,
+    "nation": "프랑스",
+    "genre": "드라마",
+    "director": "클레르 모로"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "성수",
+     "코엑스"
+    ],
+    "indie": [
+     "라이카시네마",
+     "아트하우스모모",
+     "에무시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-08",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "늦은편지@kobis-20261007",
+   "key": "늦은편지",
+   "title": "늦은 편지",
+   "kind": "new",
+   "date": "2026-11-24",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261007",
+    "title": "늦은 편지",
+    "openDt": "2026-11-24",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "멜로/로맨스",
+    "director": "서도윤"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": false,
+   "scheduledOnly": true,
+   "firstSeen": "2026-11-07",
+   "lastSeen": null
+  }
+ ]
+}
