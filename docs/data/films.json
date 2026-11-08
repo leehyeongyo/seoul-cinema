@@ -1,33 +1,124 @@
 {
- "updatedAt": "2026-11-08T17:34:55.126Z",
+ "updatedAt": "2026-11-08T17:53:21.204Z",
  "today": "2026-11-09",
  "startedOn": "2026-11-09",
  "status": {
   "cgv": {
-   "ok": false,
-   "error": "HTTP 403"
+   "ok": true,
+   "theaters": 28,
+   "showings": 1085,
+   "warning": "224건 중 97건 실패 (HTTP 502 CGV 릴레이 요청에 실패했습니다.)",
+   "route": "relay"
   },
   "lotte": {
    "ok": true,
    "theaters": 22,
    "showings": 1553,
-   "warning": null
+   "warning": null,
+   "route": "direct"
   },
   "megabox": {
-   "ok": false,
-   "error": "서울 지점 목록이 비어 있음"
+   "ok": true,
+   "theaters": 16,
+   "showings": 975,
+   "warning": null,
+   "route": "direct"
   },
   "dtryx": {
-   "ok": false,
-   "error": "모든 조회 실패 (fetch failed)"
+   "ok": true,
+   "theaters": 7,
+   "showings": 184,
+   "warning": null,
+   "route": "relay"
   },
   "kobis": {
    "ok": true,
    "movies": 1898,
-   "lookups": 0
+   "lookups": 80
   }
  },
  "films": [
+  {
+   "id": "카드캡터체리극장판@2026-05-28",
+   "key": "카드캡터체리극장판",
+   "title": "카드캡터 체리 극장판",
+   "kind": "new",
+   "date": "2026-05-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20263521",
+    "title": "카드캡터 체리 극장판",
+    "titleEn": "Cardcaptor SAKURA The movie",
+    "openDt": "2026-05-28",
+    "prdtYear": 1999,
+    "nation": "일본",
+    "genre": "애니메이션",
+    "director": "아사카 모리오"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "구의이스트폴",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "호프@2026-07-15",
+   "key": "호프",
+   "title": "호프",
+   "kind": "new",
+   "date": "2026-07-15",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20233219",
+    "title": "호프",
+    "titleEn": "HOPE",
+    "openDt": "2026-07-15",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "SF",
+    "director": "나홍진"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "방학",
+     "상봉",
+     "신촌아트레온",
+     "여의도",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "청담씨네시티"
+    ],
+    "lotte": [],
+    "megabox": [
+     "마곡",
+     "센트럴"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
   {
    "id": "스파이더맨브랜드뉴데이@2026-07-29",
    "key": "스파이더맨브랜드뉴데이",
@@ -52,8 +143,43 @@
     "lotte": [
      "가양"
     ],
-    "megabox": [],
+    "megabox": [
+     "상암월드컵경기장"
+    ],
     "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "어떻게해야했을까@2026-07-29",
+   "key": "어떻게해야했을까",
+   "title": "어떻게 해야 했을까?",
+   "kind": "new",
+   "date": "2026-07-29",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20264148",
+    "title": "어떻게 해야 했을까?",
+    "titleEn": "What Should We Have Done",
+    "openDt": "2026-07-29",
+    "prdtYear": 2024,
+    "nation": "일본",
+    "genre": "다큐멘터리",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -80,7 +206,14 @@
     "director": "크리스토퍼 놀란"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "대학로",
+     "압구정",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "천호"
+    ],
     "lotte": [
      "가양",
      "건대입구",
@@ -95,7 +228,241 @@
      "월드타워",
      "은평(롯데몰)"
     ],
+    "megabox": [
+     "더부티크목동현대백화점",
+     "목동",
+     "상암월드컵경기장",
+     "센트럴",
+     "이수",
+     "코엑스",
+     "화곡"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "백룸익스텐디드컷@2026-08-19",
+   "key": "백룸익스텐디드컷",
+   "title": "백룸-익스텐디드 컷",
+   "kind": "new",
+   "date": "2026-08-19",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266079",
+    "title": "백룸: 익스텐디드 컷",
+    "titleEn": "Backrooms",
+    "openDt": "2026-08-19",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "공포(호러)",
+    "director": "케인 파슨스"
+   },
+   "theaters": {
+    "cgv": [
+     "미아",
+     "상봉"
+    ],
+    "lotte": [],
     "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "옵세션@2026-09-02",
+   "key": "옵세션",
+   "title": "옵세션",
+   "kind": "new",
+   "date": "2026-09-02",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265146",
+    "title": "옵세션",
+    "titleEn": "Obsession",
+    "openDt": "2026-09-02",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "공포(호러)",
+    "director": "커리 바커"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "군자"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "더드라마@2026-09-09",
+   "key": "더드라마",
+   "title": "더 드라마",
+   "kind": "new",
+   "date": "2026-09-09",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265423",
+    "title": "더 드라마",
+    "titleEn": "The Drama",
+    "openDt": "2026-09-09",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "드라마",
+    "director": "크리스토퍼 보글리"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "웃으면복이와요내이름은수한무@2026-09-09",
+   "key": "웃으면복이와요내이름은수한무",
+   "title": "웃으면 복이 와요: 내 이름은 수한무",
+   "kind": "new",
+   "date": "2026-09-09",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265921",
+    "title": "웃으면 복이 와요: 내 이름은 수한무",
+    "titleEn": "",
+    "openDt": "2026-09-09",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "코미디",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "낭만극장"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "청년조용기신을저주하던청년시대를긋는종이되다@2026-09-11",
+   "key": "청년조용기신을저주하던청년시대를긋는종이되다",
+   "title": "청년 조용기: 신을 저주하던 청년, 시대를 긋는 종이 되다",
+   "kind": "new",
+   "date": "2026-09-11",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20264879",
+    "title": "청년 조용기: 신을 저주하던 청년, 시대를 긋는 종이 되다",
+    "titleEn": "The Young David Yonggi Cho",
+    "openDt": "2026-09-11",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "권혁만"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "인턴@2026-09-16",
+   "key": "인턴",
+   "title": "인턴",
+   "kind": "new",
+   "date": "2026-09-16",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20256308",
+    "title": "인턴",
+    "titleEn": "The Intern",
+    "openDt": "2026-09-16",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "김도영"
+   },
+   "theaters": {
+    "cgv": [
+     "청담씨네시티"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "레지던트이블0번째밤@2026-09-17",
+   "key": "레지던트이블0번째밤",
+   "title": "레지던트 이블: 0번째 밤",
+   "kind": "new",
+   "date": "2026-09-17",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20263870",
+    "title": "레지던트 이블: 0번째 밤",
+    "titleEn": "Resident Evil",
+    "openDt": "2026-09-17",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "공포(호러)",
+    "director": "잭 크레거"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "군자"
+    ],
     "indie": []
    },
    "playing": true,
@@ -123,7 +490,26 @@
     "director": "허진호"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "구로",
+     "대학로",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "수유",
+     "신촌아트레온",
+     "여의도",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "피카디리1958"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -139,7 +525,50 @@
      "월드타워",
      "중랑"
     ],
-    "megabox": [],
+    "megabox": [
+     "강동",
+     "구의이스트폴",
+     "마곡",
+     "목동",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "화곡"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "어벤져스엔드게임앙코르@2026-09-23",
+   "key": "어벤져스엔드게임앙코르",
+   "title": "어벤져스: 엔드게임 앙코르",
+   "kind": "new",
+   "date": "2026-09-23",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266766",
+    "title": "어벤져스: 엔드게임 앙코르",
+    "titleEn": "Avengers: Endgame Encore",
+    "openDt": "2026-09-23",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "액션",
+    "director": "안소니 루소, 조 루소"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
     "indie": []
    },
    "playing": true,
@@ -167,7 +596,18 @@
     "director": "최국희"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "미아",
+     "방학",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "피카디리1958"
+    ],
     "lotte": [
      "가양",
      "강동",
@@ -176,7 +616,17 @@
      "수유",
      "월드타워"
     ],
-    "megabox": [],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "목동",
+     "상암월드컵경기장",
+     "송파파크하비오",
+     "코엑스",
+     "화곡"
+    ],
     "indie": []
    },
    "playing": true,
@@ -204,7 +654,34 @@
     "director": "오이카와 케이"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "구로",
+     "대학로",
+     "동대문",
+     "등촌",
+     "명동",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "수유",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티",
+     "피카디리1958",
+     "홍대"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -228,8 +705,26 @@
      "청량리",
      "홍대입구"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "아리랑시네센터"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -269,6 +764,425 @@
    "lastSeen": "2026-11-09"
   },
   {
+   "id": "셀린느와줄리배타러가다@2026-09-30",
+   "key": "셀린느와줄리배타러가다",
+   "title": "셀린느와 줄리 배 타러 가다",
+   "kind": "new",
+   "date": "2026-09-30",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20166082",
+    "title": "셀린느와 줄리 배 타러 가다 ",
+    "titleEn": "CELINE AND JULIE GO BOATING",
+    "openDt": "2026-09-30",
+    "prdtYear": 1974,
+    "nation": "프랑스",
+    "genre": "판타지",
+    "director": "자크 리베트"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "이방인@2026-09-30",
+   "key": "이방인",
+   "title": "이방인",
+   "kind": "new",
+   "date": "2026-09-30",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20262961",
+    "title": "이방인",
+    "titleEn": "The Stranger",
+    "openDt": "2026-09-30",
+    "prdtYear": 2025,
+    "nation": "프랑스",
+    "genre": "드라마",
+    "director": "프랑수아 오종"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "디거@2026-10-03",
+   "key": "디거",
+   "title": "디거",
+   "kind": "new",
+   "date": "2026-10-03",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20264775",
+    "title": "디거",
+    "titleEn": "Digger",
+    "openDt": "2026-10-03",
+    "prdtYear": 2026,
+    "nation": "미국",
+    "genre": "코미디",
+    "director": "알레한드로 곤잘레스 이냐리투"
+   },
+   "theaters": {
+    "cgv": [
+     "명동",
+     "왕십리",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자",
+     "마곡",
+     "상암월드컵경기장"
+    ],
+    "indie": [
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "룩백@2026-10-08",
+   "key": "룩백",
+   "title": "룩백",
+   "kind": "new",
+   "date": "2026-10-08",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265062",
+    "title": "룩백",
+    "titleEn": "Look Back",
+    "openDt": "2026-10-08",
+    "prdtYear": 2026,
+    "nation": "일본",
+    "genre": "드라마",
+    "director": "고레에다 히로카즈"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "전자오락수호대@2026-10-14",
+   "key": "전자오락수호대",
+   "title": "전자오락수호대",
+   "kind": "new",
+   "date": "2026-10-14",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266263",
+    "title": "전자오락수호대",
+    "titleEn": "Guardians of the Video Game",
+    "openDt": "2026-10-14",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "애니메이션",
+    "director": "엄영식"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "수유",
+     "신촌아트레온",
+     "여의도",
+     "연남",
+     "왕십리",
+     "용산아이파크몰",
+     "청담씨네시티",
+     "홍대"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "침묵의빛@2026-10-14",
+   "key": "침묵의빛",
+   "title": "침묵의 빛",
+   "kind": "re",
+   "date": "2026-10-14",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": 2007,
+   "kobis": {
+    "movieCd": "20078992",
+    "title": "침묵의 빛",
+    "titleEn": "Silent Light",
+    "openDt": "2026-10-14",
+    "prdtYear": 2007,
+    "nation": "멕시코",
+    "genre": "드라마",
+    "director": "카를로스 레이가다스"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "헤븐노우즈왓@2026-10-14",
+   "key": "헤븐노우즈왓",
+   "title": "헤븐 노우즈 왓",
+   "kind": "re",
+   "date": "2026-10-14",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": 2014,
+   "kobis": {
+    "movieCd": "20176664",
+    "title": "헤븐 노우즈 왓",
+    "titleEn": "Heaven Knows What",
+    "openDt": "2026-10-14",
+    "prdtYear": 2014,
+    "nation": "미국",
+    "genre": "드라마",
+    "director": "조쉬 사프디, 베니 사프디"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "구제역에서살아돌아온돼지@2026-10-21",
+   "key": "구제역에서살아돌아온돼지",
+   "title": "구제역에서 살아 돌아온 돼지",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20249184",
+    "title": "구제역에서 살아 돌아온 돼지",
+    "titleEn": "PIG THAT SURVIVED FOOT-AND-MOUTH DISEASE",
+    "openDt": "2026-10-21",
+    "prdtYear": 2024,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "허범욱"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "눈둘데가없네@2026-10-21",
+   "key": "눈둘데가없네",
+   "title": "눈 둘 데가 없네",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265145",
+    "title": "눈 둘 데가 없네",
+    "titleEn": "NOWHERE TO LAY MY EYES",
+    "openDt": "2026-10-21",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "홍상수"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "대학로",
+     "동대문",
+     "신촌아트레온",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "레위기@2026-10-21",
+   "key": "레위기",
+   "title": "레위기",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266423",
+    "title": "레위기",
+    "titleEn": "Leviticus",
+    "openDt": "2026-10-21",
+    "prdtYear": 2026,
+    "nation": "호주",
+    "genre": "공포(호러)",
+    "director": "애드리언 치아렐라"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "대학로",
+     "압구정",
+     "왕십리",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "군자",
+     "마곡",
+     "상암월드컵경기장"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "부에노스아이레스여안녕@2026-10-21",
+   "key": "부에노스아이레스여안녕",
+   "title": "부에노스 아이레스여 안녕",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266080",
+    "title": "부에노스 아이레스여 안녕",
+    "titleEn": "Adios Buenos Aires",
+    "openDt": "2026-10-21",
+    "prdtYear": 2023,
+    "nation": "독일",
+    "genre": "드라마",
+    "director": "게르만 크랄"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "실낙원@2026-10-21",
    "key": "실낙원",
    "title": "실낙원",
@@ -288,7 +1202,14 @@
     "director": "연상호"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "구로",
+     "불광",
+     "수유",
+     "왕십리",
+     "용산아이파크몰",
+     "중계"
+    ],
     "lotte": [
      "가양",
      "강동",
@@ -296,7 +1217,123 @@
      "김포공항",
      "월드타워"
     ],
+    "megabox": [
+     "상암월드컵경기장"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "씽씽@2026-10-21",
+   "key": "씽씽",
+   "title": "씽씽",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20240146",
+    "title": "씽씽",
+    "titleEn": "Sing Sing",
+    "openDt": "2026-10-21",
+    "prdtYear": 2023,
+    "nation": "미국",
+    "genre": "드라마",
+    "director": "그레그 퀘다르"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
     "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "여전히찬란하게@2026-10-21",
+   "key": "여전히찬란하게",
+   "title": "여전히 찬란하게",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266189",
+    "title": "여전히 찬란하게",
+    "titleEn": "STILL SHINING",
+    "openDt": "2026-10-21",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "송일곤"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "이수",
+     "코엑스",
+     "홍대(아니메)"
+    ],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "차오@2026-10-21",
+   "key": "차오",
+   "title": "차오",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20258640",
+    "title": "차오",
+    "titleEn": "ChaO",
+    "openDt": "2026-10-21",
+    "prdtYear": 2025,
+    "nation": "일본",
+    "genre": "애니메이션",
+    "director": "아오키 야스히로"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "마곡",
+     "상암월드컵경기장",
+     "코엑스"
+    ],
     "indie": []
    },
    "playing": true,
@@ -324,7 +1361,14 @@
     "director": "제임스 왓킨스"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "상봉",
+     "연남",
+     "왕십리",
+     "용산아이파크몰",
+     "중계"
+    ],
     "lotte": [
      "가양",
      "강동",
@@ -334,7 +1378,81 @@
      "신림",
      "월드타워"
     ],
-    "megabox": [],
+    "megabox": [
+     "강남",
+     "군자",
+     "상암월드컵경기장",
+     "이수",
+     "홍대(아니메)"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "킬링타임@2026-10-21",
+   "key": "킬링타임",
+   "title": "킬링타임",
+   "kind": "new",
+   "date": "2026-10-21",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20246036",
+    "title": "킬링타임",
+    "titleEn": "Killing Time",
+    "openDt": "2026-10-21",
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "액션",
+    "director": "장준엽"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "이수"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "7데이즈7피플@2026-10-28",
+   "key": "7데이즈7피플",
+   "title": "7데이즈 7피플",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265965",
+    "title": "7데이즈 7피플",
+    "titleEn": "7 Days 7 People",
+    "openDt": "2026-10-28",
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "정다원"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자"
+    ],
     "indie": []
    },
    "playing": true,
@@ -385,6 +1503,78 @@
      "홍대입구"
     ],
     "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "메릴스트립프로젝트@2026-10-28",
+   "key": "메릴스트립프로젝트",
+   "title": "메릴 스트립 프로젝트",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20246087",
+    "title": "메릴 스트립 프로젝트",
+    "titleEn": "The Meryl Streep Project",
+    "openDt": "2026-10-28",
+    "prdtYear": 2024,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "박효선"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "브루넬로우아한선구자@2026-10-28",
+   "key": "브루넬로우아한선구자",
+   "title": "브루넬로: 우아한 선구자",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266805",
+    "title": "브루넬로: 우아한 선구자",
+    "titleEn": "Brunello: The Gracious Visionary",
+    "openDt": "2026-10-28",
+    "prdtYear": 2025,
+    "nation": "이탈리아",
+    "genre": "다큐멘터리",
+    "director": "쥬세페 토르나토레"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자",
+     "상봉"
+    ],
     "indie": []
    },
    "playing": true,
@@ -459,7 +1649,20 @@
     "director": "이용재"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "고덕강일",
+     "구로",
+     "대학로",
+     "등촌",
+     "미아",
+     "방학",
+     "불광",
+     "수유",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -480,6 +1683,127 @@
      "중랑",
      "청량리"
     ],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "어머니의가계부@2026-10-28",
+   "key": "어머니의가계부",
+   "title": "어머니의 가계부",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20244563",
+    "title": "어머니의 가계부",
+    "titleEn": "My Mother's Household Ledger",
+    "openDt": "2026-10-28",
+    "prdtYear": 2024,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "성승택"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "낭만극장"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "에디앨리스테이크@2026-10-28",
+   "key": "에디앨리스테이크",
+   "title": "에디 앨리스-테이크",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20256583",
+    "title": "에디 앨리스: 테이크",
+    "titleEn": "Edhi Alice: Take",
+    "openDt": "2026-10-28",
+    "prdtYear": 2024,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "김일란"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "요루시카라이브@2026-10-28",
+   "key": "요루시카라이브",
+   "title": "요루시카 라이브",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268151",
+    "title": "요루시카 라이브 [도작]",
+    "titleEn": "YORUSHIKA LIVE 'Plagiarism'",
+    "openDt": "2026-10-28",
+    "prdtYear": 2026,
+    "nation": "일본",
+    "genre": "공연",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "강변",
+     "여의도",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "홍대"
+    ],
+    "lotte": [],
     "megabox": [],
     "indie": []
    },
@@ -508,13 +1832,59 @@
     "director": "조지아 오클리"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "수유",
+     "압구정",
+     "청담씨네시티"
+    ],
     "lotte": [
      "건대입구",
      "월드타워"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "군자"
+    ],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "장님버드나무와잠자는여자@2026-10-28",
+   "key": "장님버드나무와잠자는여자",
+   "title": "장님 버드나무와 잠자는 여자",
+   "kind": "new",
+   "date": "2026-10-28",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20266848",
+    "title": "장님 버드나무와 잠자는 여자",
+    "titleEn": "Blind Willow, Sleeping Woman",
+    "openDt": "2026-10-28",
+    "prdtYear": 2023,
+    "nation": "프랑스",
+    "genre": "애니메이션",
+    "director": "피에르 폴데스"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -541,7 +1911,34 @@
     "director": "데이비드 에이어"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "구로",
+     "대학로",
+     "동대문",
+     "등촌",
+     "명동",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "수유",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티",
+     "피카디리1958",
+     "홍대"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -565,8 +1962,26 @@
      "청량리",
      "홍대입구"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "아리랑시네센터"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -593,12 +2008,57 @@
     "director": "김진유"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "대학로",
+     "동대문",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "용산아이파크몰"
+    ],
     "lotte": [
      "노원",
      "신도림",
      "월드타워"
     ],
+    "megabox": [
+     "군자"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "프레지던트박정희@2026-10-29",
+   "key": "프레지던트박정희",
+   "title": "프레지던트박 정희",
+   "kind": "new",
+   "date": "2026-10-29",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268106",
+    "title": "프레지던트박 정희",
+    "titleEn": "",
+    "openDt": "2026-10-29",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "김정희"
+   },
+   "theaters": {
+    "cgv": [
+     "천호"
+    ],
+    "lotte": [],
     "megabox": [],
     "indie": []
    },
@@ -668,7 +2128,25 @@
     "director": "김종관"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "구로",
+     "대학로",
+     "동대문",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "수유",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "청담씨네시티"
+    ],
     "lotte": [
      "강동",
      "건대입구",
@@ -683,8 +2161,26 @@
      "중랑",
      "청량리"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아트하우스모모"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -731,7 +2227,9 @@
      "청량리"
     ],
     "megabox": [],
-    "indie": []
+    "indie": [
+     "라이카시네마"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -758,7 +2256,24 @@
     "director": "마틴 맥도나"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "대학로",
+     "동대문",
+     "명동",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "수유",
+     "압구정",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "청담씨네시티"
+    ],
     "lotte": [
      "강동",
      "건대입구",
@@ -774,7 +2289,108 @@
      "중랑",
      "청량리"
     ],
-    "megabox": [],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아리랑시네센터",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "욕쟁이할머니@2026-11-04",
+   "key": "욕쟁이할머니",
+   "title": "욕쟁이 할머니",
+   "kind": "new",
+   "date": "2026-11-04",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261695",
+    "title": "욕쟁이 할머니",
+    "titleEn": "The Foul-Mouthed Granny",
+    "openDt": "2026-11-04",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "다큐멘터리",
+    "director": "홍승표"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "인생세탁소@2026-11-04",
+   "key": "인생세탁소",
+   "title": "인생세탁소",
+   "kind": "new",
+   "date": "2026-11-04",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20236463",
+    "title": "인생세탁소",
+    "titleEn": "A Ray of Sunlight",
+    "openDt": "2026-11-04",
+    "prdtYear": 2024,
+    "nation": "한국",
+    "genre": "가족",
+    "director": "문숙희"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자",
+     "코엑스"
+    ],
     "indie": []
    },
    "playing": true,
@@ -808,7 +2424,10 @@
      "월드타워",
      "중랑"
     ],
-    "megabox": [],
+    "megabox": [
+     "군자",
+     "송파파크하비오"
+    ],
     "indie": []
    },
    "playing": true,
@@ -836,7 +2455,34 @@
     "director": "김정훈"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "구로",
+     "대학로",
+     "동대문",
+     "등촌",
+     "명동",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "수유",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티",
+     "피카디리1958",
+     "홍대"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -860,6 +2506,78 @@
      "청량리",
      "홍대입구"
     ],
+    "megabox": [
+     "강남",
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "명탐정코난30호살인사건@2026-11-05",
+   "key": "명탐정코난30호살인사건",
+   "title": "명탐정 코난-30호 살인 사건",
+   "kind": "new",
+   "date": "2026-11-05",
+   "dateSource": "kobis",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267697",
+    "title": "명탐정 코난: 30호 살인 사건",
+    "titleEn": "Detective Conan: The Counterfeit Case of Ultra 30",
+    "openDt": "2026-11-05",
+    "prdtYear": 2026,
+    "nation": "일본",
+    "genre": "애니메이션",
+    "director": "카마나카 노부하루"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "구로",
+     "대학로",
+     "동대문",
+     "등촌",
+     "명동",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "수유",
+     "신촌아트레온",
+     "압구정",
+     "여의도",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티",
+     "홍대"
+    ],
+    "lotte": [],
     "megabox": [],
     "indie": []
    },
@@ -888,7 +2606,26 @@
     "director": "알레산드로 칼로니, 에리카 리비노자"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "구로",
+     "동대문",
+     "등촌",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "수유",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -909,6 +2646,500 @@
      "중랑",
      "청량리"
     ],
+    "megabox": [
+     "강동",
+     "구의이스트폴",
+     "군자",
+     "더부티크목동현대백화점",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "걸스앤보이즈@2026-11-09",
+   "key": "걸스앤보이즈",
+   "title": "걸스 앤 보이즈",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268003",
+    "title": "걸스 앤 보이즈",
+    "titleEn": "Girls & Boys",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "아일랜드",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "겨울이야기@2026-11-09",
+   "key": "겨울이야기",
+   "title": "겨울 이야기",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2004,
+   "kobis": {
+    "movieCd": "20061242",
+    "title": "겨울 이야기",
+    "titleEn": "Winter Story",
+    "openDt": "2023-01-18",
+    "prdtYear": 2004,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "신상옥"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "극장판뱅드림잇츠마이고전편봄의양지방황하는고양이@2026-11-09",
+   "key": "극장판뱅드림잇츠마이고전편봄의양지방황하는고양이",
+   "title": "극장판 뱅드림! 잇츠 마이고!!!!! 전편: 봄의 양지, 방황하는 고양이",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2024,
+   "kobis": {
+    "movieCd": "20254062",
+    "title": "극장판 뱅드림! 잇츠 마이고!!!!! 전편: 봄의 양지, 방황하는 고양이",
+    "titleEn": "BanG Dream! It's MyGO!!!!! ",
+    "openDt": "2025-04-24",
+    "prdtYear": 2024,
+    "nation": "일본",
+    "genre": "애니메이션",
+    "director": "카키모토 코다이"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "홍대(아니메)"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "극장판뱅드림잇츠마이고후편노래하자우리가될수있는노래필름라이브@2026-11-09",
+   "key": "극장판뱅드림잇츠마이고후편노래하자우리가될수있는노래필름라이브",
+   "title": "극장판 뱅드림! 잇츠 마이고!!!!! 후편: 노래하자, 우리가 될 수 있는 노래 & 필름 라이브",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2024,
+   "kobis": {
+    "movieCd": "20255168",
+    "title": "극장판 뱅드림! 잇츠 마이고!!!!! 후편: 노래하자, 우리가 될 수 있는 노래 & 필름 라이브",
+    "titleEn": "BanG Dream! It's MyGO!!!!!",
+    "openDt": "2025-06-19",
+    "prdtYear": 2024,
+    "nation": "일본",
+    "genre": "애니메이션",
+    "director": "카키모토 코다이"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "홍대(아니메)"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "극장판체인소맨레제편@2026-11-09",
+   "key": "극장판체인소맨레제편",
+   "title": "극장판 체인소 맨-레제편",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "강남",
+     "고덕강일",
+     "구로",
+     "등촌",
+     "상봉",
+     "신촌아트레온",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "천호",
+     "홍대"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "꿈과희망사이에서@2026-11-09",
+   "key": "꿈과희망사이에서",
+   "title": "꿈과 희망 사이에서",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268014",
+    "title": "꿈과 희망 사이에서",
+    "titleEn": "Between Dreams and Hope",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "이란",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "낭만공연@2026-11-09",
+   "key": "낭만공연",
+   "title": "낭만공연",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "낭만극장"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁4제6회성북청춘불패영화제@2026-11-09",
+   "key": "단편경쟁4제6회성북청춘불패영화제",
+   "title": "단편경쟁 4 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁6제6회성북청춘불패영화제@2026-11-09",
+   "key": "단편경쟁6제6회성북청춘불패영화제",
+   "title": "단편경쟁 6 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁9제6회성북청춘불패영화제@2026-11-09",
+   "key": "단편경쟁9제6회성북청춘불패영화제",
+   "title": "단편경쟁 9 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "라보엠@themet@2026-11-09",
+   "key": "라보엠@themet",
+   "title": "라 보엠 @The Met",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "로스트도터@2026-11-09",
+   "key": "로스트도터",
+   "title": "로스트 도터",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2021,
+   "kobis": {
+    "movieCd": "20210542",
+    "title": "로스트 도터",
+    "titleEn": "The Lost Daughter",
+    "openDt": "2022-07-14",
+    "prdtYear": 2021,
+    "nation": "미국",
+    "genre": "드라마",
+    "director": "매기 질렌할"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "메릴리위롤어롱@2026-11-09",
+   "key": "메릴리위롤어롱",
+   "title": "메릴리 위 롤 어롱",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267228",
+    "title": "메릴리 위 롤 어롱",
+    "titleEn": "Merrily We Roll Along",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "미국",
+    "genre": "공연",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "대학로",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "미션@2026-11-09",
+   "key": "미션",
+   "title": "미션",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1986,
+   "kobis": {
+    "movieCd": "19869056",
+    "title": "미션",
+    "titleEn": "The Mission",
+    "openDt": "1986-12-24",
+    "prdtYear": 1986,
+    "nation": "영국",
+    "genre": "드라마",
+    "director": "롤랑 조페"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자"
+    ],
+    "indie": [
+     "더숲아트시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "박하사탕@2026-11-09",
+   "key": "박하사탕",
+   "title": "박하사탕",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1999,
+   "kobis": {
+    "movieCd": "19990050",
+    "title": "박하사탕",
+    "titleEn": "Peppermint Candy",
+    "openDt": "2000-01-01",
+    "prdtYear": 1999,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "이창동"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "구의이스트폴",
+     "목동",
+     "상암월드컵경기장",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "보디블로우@2026-11-09",
+   "key": "보디블로우",
+   "title": "보디 블로우",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268008",
+    "title": "보디 블로우",
+    "titleEn": "Body Blow",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "호주",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
     "megabox": [],
     "indie": []
    },
@@ -981,6 +3212,133 @@
    "lastSeen": "2026-11-09"
   },
   {
+   "id": "사랑을카피하다@2026-11-09",
+   "key": "사랑을카피하다",
+   "title": "사랑을 카피하다",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2010,
+   "kobis": {
+    "movieCd": "20119927",
+    "title": "사랑을 카피하다",
+    "titleEn": "Certified Copy",
+    "openDt": "2011-05-05",
+    "prdtYear": 2010,
+    "nation": "프랑스",
+    "genre": "드라마",
+    "director": "압바스 키아로스타미"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "삭제된소년@2026-11-09",
+   "key": "삭제된소년",
+   "title": "삭제된 소년",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20257038",
+    "title": "삭제된 소년",
+    "titleEn": "What We Saw",
+    "openDt": null,
+    "prdtYear": 2027,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "현해리"
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "아사코@2026-11-09",
+   "key": "아사코",
+   "title": "아사코",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2017,
+   "kobis": {
+    "movieCd": "20181200",
+    "title": "아사코",
+    "titleEn": "Asako I & II",
+    "openDt": "2019-03-14",
+    "prdtYear": 2017,
+    "nation": "일본",
+    "genre": "드라마",
+    "director": "하마구치 류스케"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "군자",
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "안드레아셰니에@themet@2026-11-09",
+   "key": "안드레아셰니에@themet",
+   "title": "안드레아 셰니에 @The Met",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "알라딘@2026-11-09",
    "key": "알라딘",
    "title": "알라딘",
@@ -1012,6 +3370,170 @@
      "홍대입구"
     ],
     "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "암스테르담시민이예술의주인공이되다@2026-11-09",
+   "key": "암스테르담시민이예술의주인공이되다",
+   "title": "암스테르담 — 시민이 예술의 주인공이 되다",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "오아시스@2026-11-09",
+   "key": "오아시스",
+   "title": "오아시스",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2002,
+   "kobis": {
+    "movieCd": "20020226",
+    "title": "오아시스",
+    "titleEn": "Oasis",
+    "openDt": "2002-08-14",
+    "prdtYear": 2002,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "이창동"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "구의이스트폴",
+     "목동",
+     "상암월드컵경기장",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "이반앤하둠@2026-11-09",
+   "key": "이반앤하둠",
+   "title": "이반 앤 하둠",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268001",
+    "title": "이반 앤 하둠",
+    "titleEn": "Ivan & Hadoum",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "스페인",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "진격의거인홍련의화살@2026-11-09",
+   "key": "진격의거인홍련의화살",
+   "title": "진격의 거인-홍련의 화살",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "강남",
+     "고덕강일",
+     "구로",
+     "대학로",
+     "등촌",
+     "불광",
+     "상봉",
+     "성신여대입구",
+     "신촌아트레온",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "천호",
+     "홍대"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "쿵푸허슬@2026-11-09",
+   "key": "쿵푸허슬",
+   "title": "쿵푸 허슬",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2004,
+   "kobis": {
+    "movieCd": "20040776",
+    "title": "쿵푸 허슬",
+    "titleEn": "Kung Fu Hustle",
+    "openDt": "2005-01-14",
+    "prdtYear": 2004,
+    "nation": "중국",
+    "genre": "코미디",
+    "director": "주성치"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "군자",
+     "목동",
+     "상암월드컵경기장",
+     "이수"
+    ],
     "indie": []
    },
    "playing": true,
@@ -1059,6 +3581,38 @@
    "lastSeen": "2026-11-09"
   },
   {
+   "id": "프란체스코@2026-11-09",
+   "key": "프란체스코",
+   "title": "프란체스코",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1989,
+   "kobis": {
+    "movieCd": "19890269",
+    "title": "프란체스코",
+    "titleEn": "Francesco",
+    "openDt": "1989-09-30",
+    "prdtYear": 1989,
+    "nation": "이탈리아",
+    "genre": "드라마",
+    "director": "릴리아나 카바니"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "프레데터죽음의땅@2026-11-09",
    "key": "프레데터죽음의땅",
    "title": "프레데터: 죽음의 땅",
@@ -1098,6 +3652,694 @@
    "lastSeen": "2026-11-09"
   },
   {
+   "id": "프리즘오브컬러@2026-11-09",
+   "key": "프리즘오브컬러",
+   "title": "프리즘 오브 컬러",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "한국단편경쟁1@2026-11-09",
+   "key": "한국단편경쟁1",
+   "title": "한국 단편 경쟁 1",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "한국단편비경쟁3@2026-11-09",
+   "key": "한국단편비경쟁3",
+   "title": "한국 단편 비경쟁 3",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "한국중편비경쟁@2026-11-09",
+   "key": "한국중편비경쟁",
+   "title": "한국 중편 비경쟁",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "해외단편컬렉션2@2026-11-09",
+   "key": "해외단편컬렉션2",
+   "title": "해외 단편 컬렉션 2",
+   "kind": "new",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "헤이트풀8@2026-11-09",
+   "key": "헤이트풀8",
+   "title": "헤이트풀8",
+   "kind": "re",
+   "date": "2026-11-09",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2015,
+   "kobis": {
+    "movieCd": "20159510",
+    "title": "헤이트풀8",
+    "titleEn": "The Hateful Eight",
+    "openDt": "2016-01-07",
+    "prdtYear": 2015,
+    "nation": "미국",
+    "genre": "액션",
+    "director": "쿠엔틴 타란티노"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "강변",
+     "대학로",
+     "상봉",
+     "압구정",
+     "여의도",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "홍대"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "겁쟁이@2026-11-10",
+   "key": "겁쟁이",
+   "title": "겁쟁이",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267997",
+    "title": "겁쟁이",
+    "titleEn": "Coward",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "벨기에",
+    "genre": "전쟁",
+    "director": "루카스 돈트"
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "나스카라인의여인@2026-11-10",
+   "key": "나스카라인의여인",
+   "title": "나스카 라인의 여인",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268004",
+    "title": "나스카 라인의 여인",
+    "titleEn": "Lady Nazca",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "프랑스",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "네가그리울거야@2026-11-10",
+   "key": "네가그리울거야",
+   "title": "네가 그리울 거야",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268029",
+    "title": "네가 그리울 거야",
+    "titleEn": "I am Going to Miss You",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "브라질",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "다운타운@2026-11-10",
+   "key": "다운타운",
+   "title": "다운타운",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267998",
+    "title": "다운타운",
+    "titleEn": "Downtown",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "네덜란드",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁10제6회성북청춘불패영화제@2026-11-10",
+   "key": "단편경쟁10제6회성북청춘불패영화제",
+   "title": "단편경쟁 10 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁13제6회성북청춘불패영화제@2026-11-10",
+   "key": "단편경쟁13제6회성북청춘불패영화제",
+   "title": "단편경쟁 13 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁2제6회성북청춘불패영화제@2026-11-10",
+   "key": "단편경쟁2제6회성북청춘불패영화제",
+   "title": "단편경쟁 2 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "더랍스터@2026-11-10",
+   "key": "더랍스터",
+   "title": "더 랍스터",
+   "kind": "re",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2015,
+   "kobis": {
+    "movieCd": "20150862",
+    "title": "더 랍스터",
+    "titleEn": "The Lobster",
+    "openDt": "2015-10-29",
+    "prdtYear": 2015,
+    "nation": "영국",
+    "genre": "판타지",
+    "director": "요르고스 란티모스"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "대학로",
+     "압구정",
+     "왕십리",
+     "용산아이파크몰",
+     "천호",
+     "청담씨네시티"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "스키프@2026-11-10",
+   "key": "스키프",
+   "title": "스키프",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267999",
+    "title": "스키프",
+    "titleEn": "Skiff",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "벨기에",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "아이엠러브@2026-11-10",
+   "key": "아이엠러브",
+   "title": "아이 엠 러브",
+   "kind": "re",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2009,
+   "kobis": {
+    "movieCd": "20110027",
+    "title": "아이 엠 러브",
+    "titleEn": "I Am Love",
+    "openDt": "2011-01-20",
+    "prdtYear": 2009,
+    "nation": "이탈리아",
+    "genre": "드라마",
+    "director": "루카 구아다그니노"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "안개속의코끼리@2026-11-10",
+   "key": "안개속의코끼리",
+   "title": "안개 속의 코끼리",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267994",
+    "title": "안개 속의 코끼리",
+    "titleEn": "Elephants in the Fog",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "기타",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "짐퀸@2026-11-10",
+   "key": "짐퀸",
+   "title": "짐 퀸",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268002",
+    "title": "짐 퀸",
+    "titleEn": "Jim Queen",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "프랑스",
+    "genre": "애니메이션",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "피닉스@2026-11-10",
+   "key": "피닉스",
+   "title": "피닉스",
+   "kind": "re",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1997,
+   "kobis": {
+    "movieCd": "19990130",
+    "title": "피닉스",
+    "titleEn": "Phoenix",
+    "openDt": "1999-02-06",
+    "prdtYear": 1997,
+    "nation": "미국",
+    "genre": "범죄",
+    "director": "대니 캐넌"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "더숲아트시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "한국단편경쟁2@2026-11-10",
+   "key": "한국단편경쟁2",
+   "title": "한국 단편 경쟁 2",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "한국단편비경쟁4@2026-11-10",
+   "key": "한국단편비경쟁4",
+   "title": "한국 단편 비경쟁 4",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "해외단편컬렉션1@2026-11-10",
+   "key": "해외단편컬렉션1",
+   "title": "해외 단편 컬렉션 1",
+   "kind": "new",
+   "date": "2026-11-10",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "8번출구@2026-11-11",
+   "key": "8번출구",
+   "title": "8번 출구",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2025,
+   "kobis": {
+    "movieCd": "20257570",
+    "title": "8번 출구",
+    "titleEn": "The Exit 8",
+    "openDt": "2025-10-22",
+    "prdtYear": 2025,
+    "nation": "일본",
+    "genre": "스릴러",
+    "director": "카와무라 겐키"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "수유"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "강원도의힘@2026-11-11",
+   "key": "강원도의힘",
+   "title": "강원도의 힘",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1998,
+   "kobis": {
+    "movieCd": "19980040",
+    "title": "강원도의 힘",
+    "titleEn": "The Power of Kangwon Province",
+    "openDt": "1998-04-04",
+    "prdtYear": 1998,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "홍상수"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "거짓말4k무삭제완전판@kobis-20267589",
    "key": "거짓말4k무삭제완전판",
    "title": "거짓말: 4K 무삭제 완전판",
@@ -1117,15 +4359,55 @@
     "director": "장선우"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변"
+    ],
     "lotte": [],
-    "megabox": [],
+    "megabox": [
+     "코엑스"
+    ],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "골든보이@2026-11-11",
+   "key": "골든보이",
+   "title": "골든 보이",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1974,
+   "kobis": {
+    "movieCd": "20108655",
+    "title": "골든 보이",
+    "titleEn": "Golden Boy",
+    "openDt": "1974-11-14",
+    "prdtYear": 1974,
+    "nation": "이탈리아",
+    "genre": "범죄",
+    "director": "루시아노 에르콜리"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "상암월드컵경기장",
+     "센트럴",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "극장판카드캡터체리봉인된카드@kobis-20001391",
@@ -1147,15 +4429,115 @@
     "director": "아사카 모리오"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "상봉",
+     "신촌아트레온",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계"
+    ],
     "lotte": [],
     "megabox": [],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "긴키지방의어느장소에대하여@2026-11-11",
+   "key": "긴키지방의어느장소에대하여",
+   "title": "긴키 지방의 어느 장소에 대하여",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2025,
+   "kobis": {
+    "movieCd": "20256701",
+    "title": "긴키 지방의 어느 장소에 대하여",
+    "titleEn": "KINKI",
+    "openDt": "2025-08-13",
+    "prdtYear": 2025,
+    "nation": "일본",
+    "genre": "미스터리",
+    "director": "시라이시 코지"
+   },
+   "theaters": {
+    "cgv": [
+     "강남",
+     "수유"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "노이즈@2026-11-11",
+   "key": "노이즈",
+   "title": "노이즈",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2025,
+   "kobis": {
+    "movieCd": "20233220",
+    "title": "노이즈",
+    "titleEn": "Noise",
+    "openDt": "2025-06-25",
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "공포(호러)",
+    "director": "김수진"
+   },
+   "theaters": {
+    "cgv": [
+     "미아",
+     "상봉",
+     "왕십리"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "단편경쟁7제6회성북청춘불패영화제@2026-11-11",
+   "key": "단편경쟁7제6회성북청춘불패영화제",
+   "title": "단편경쟁 7 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "더버스@kobis-20236720",
@@ -1188,6 +4570,75 @@
    "lastSeen": null
   },
   {
+   "id": "돼지가우물에빠진날@2026-11-11",
+   "key": "돼지가우물에빠진날",
+   "title": "돼지가 우물에 빠진 날",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1996,
+   "kobis": {
+    "movieCd": "19960051",
+    "title": "돼지가 우물에 빠진 날",
+    "titleEn": "The Day a Pig Fell into a Well",
+    "openDt": "1996-05-15",
+    "prdtYear": 1996,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "홍상수"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "듄@2026-11-11",
+   "key": "듄",
+   "title": "듄",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2021,
+   "kobis": {
+    "movieCd": "20210087",
+    "title": "듄",
+    "titleEn": "DUNE",
+    "openDt": "2021-10-20",
+    "prdtYear": 2021,
+    "nation": "미국",
+    "genre": "SF",
+    "director": "드니 빌뇌브"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "천호"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "드골저항의시작@2026-11-11",
    "key": "드골저항의시작",
    "title": "드골: 저항의 시작",
@@ -1207,12 +4658,23 @@
     "director": "안토닌 보드리"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "용산아이파크몰"
+    ],
     "lotte": [
      "강동",
      "독산"
     ],
-    "megabox": [],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "상암월드컵경기장",
+     "송파파크하비오",
+     "코엑스"
+    ],
     "indie": []
    },
    "playing": true,
@@ -1240,7 +4702,19 @@
     "director": "데이미언 셔젤"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "미아",
+     "방학",
+     "상봉",
+     "수유",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -1264,8 +4738,25 @@
      "청량리",
      "홍대입구"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아트하우스모모"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -1292,15 +4783,36 @@
     "director": "데이빗 로워리"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "불광",
+     "수유",
+     "압구정",
+     "용산아이파크몰"
+    ],
     "lotte": [
      "가양",
      "건대입구",
      "노원",
      "월드타워"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -1369,15 +4881,58 @@
     "director": ""
    },
    "theaters": {
+    "cgv": [
+     "강변",
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "밀양@2026-11-11",
+   "key": "밀양",
+   "title": "밀양",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2007,
+   "kobis": {
+    "movieCd": "20070115",
+    "title": "밀양",
+    "titleEn": "Secret Sunshine",
+    "openDt": "2007-05-23",
+    "prdtYear": 2007,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "이창동"
+   },
+   "theaters": {
     "cgv": [],
     "lotte": [],
-    "megabox": [],
+    "megabox": [
+     "구의이스트폴",
+     "목동",
+     "상암월드컵경기장",
+     "코엑스"
+    ],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "베리베리스트레인지러브@kobis-20268218",
@@ -1399,15 +4954,21 @@
     "director": "송희숙"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "대학로",
+     "용산아이파크몰"
+    ],
     "lotte": [],
     "megabox": [],
-    "indie": []
+    "indie": [
+     "라이카시네마"
+    ]
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "삼춘어디감수광@kobis-20264929",
@@ -1429,15 +4990,20 @@
     "director": "양윤호"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "동대문",
+     "압구정",
+     "용산아이파크몰"
+    ],
     "lotte": [],
     "megabox": [],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "스크루지크리스마스캐럴@2026-11-11",
@@ -1459,7 +5025,20 @@
     "director": "티 웨스트"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "미아",
+     "방학",
+     "불광",
+     "상봉",
+     "수유",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -1481,6 +5060,160 @@
      "중랑",
      "청량리"
     ],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "화곡"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "스트레인저무황인담@2026-11-11",
+   "key": "스트레인저무황인담",
+   "title": "스트레인저 – 무황인담",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2007,
+   "kobis": {
+    "movieCd": "20080556",
+    "title": "스트레인저 – 무황인담",
+    "titleEn": "Sword Of The Stranger",
+    "openDt": "2009-03-12",
+    "prdtYear": 2007,
+    "nation": "일본",
+    "genre": "애니메이션",
+    "director": "안도 마사히로"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "여자는남자의미래다@2026-11-11",
+   "key": "여자는남자의미래다",
+   "title": "여자는 남자의 미래다",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2004,
+   "kobis": {
+    "movieCd": "20040489",
+    "title": "여자는 남자의 미래다",
+    "titleEn": "Woman Is The Future Of Man",
+    "openDt": "2004-05-05",
+    "prdtYear": 2004,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "홍상수"
+   },
+   "theaters": {
+    "cgv": [
+     "강변",
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "울프워크스@2026-11-11",
+   "key": "울프워크스",
+   "title": "울프 워크스",
+   "kind": "new",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20263737",
+    "title": "울프 워크스",
+    "titleEn": "Woolf Works",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "영국",
+    "genre": "공연",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "더부티크목동현대백화점",
+     "센트럴",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "이상가족@2026-11-11",
+   "key": "이상가족",
+   "title": "이상 가족",
+   "kind": "new",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20246331",
+    "title": "이상 가족",
+    "titleEn": "ideal and weird family",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "김지현"
+   },
+   "theaters": {
+    "cgv": [
+     "피카디리1958"
+    ],
+    "lotte": [],
     "megabox": [],
     "indie": []
    },
@@ -1512,12 +5245,15 @@
     "cgv": [],
     "lotte": [],
     "megabox": [],
-    "indie": []
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마"
+    ]
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "처녀자살소동@kobis-19998544",
@@ -1550,6 +5286,41 @@
    "lastSeen": null
   },
   {
+   "id": "초록물고기@2026-11-11",
+   "key": "초록물고기",
+   "title": "초록물고기",
+   "kind": "re",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1997,
+   "kobis": {
+    "movieCd": "19970048",
+    "title": "초록물고기",
+    "titleEn": "Green Fish",
+    "openDt": "1997-02-07",
+    "prdtYear": 1997,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "이창동"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "구의이스트폴",
+     "목동",
+     "상암월드컵경기장",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "코리안블랙아이즈@kobis-20233192",
    "key": "코리안블랙아이즈",
    "title": "코리안 블랙 아이즈",
@@ -1580,6 +5351,29 @@
    "lastSeen": null
   },
   {
+   "id": "폐막식제6회성북청춘불패영화제@2026-11-11",
+   "key": "폐막식제6회성북청춘불패영화제",
+   "title": "폐막식 - 제6회 성북청춘불패영화제",
+   "kind": "new",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아리랑시네센터"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "폴2데드포인트@2026-11-11",
    "key": "폴2데드포인트",
    "title": "폴2: 데드포인트",
@@ -1599,7 +5393,21 @@
     "director": "마이클 스피어리그, 피터 스피어이그"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강남",
+     "강변",
+     "고덕강일",
+     "대학로",
+     "미아",
+     "방학",
+     "상봉",
+     "수유",
+     "왕십리",
+     "용산아이파크몰",
+     "중계",
+     "천호",
+     "청담씨네시티"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -1623,7 +5431,21 @@
      "청량리",
      "홍대입구"
     ],
-    "megabox": [],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
     "indie": []
    },
    "playing": true,
@@ -1651,7 +5473,15 @@
     "director": "앤소니 마라스"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "대학로",
+     "수유",
+     "왕십리",
+     "용산아이파크몰",
+     "청담씨네시티"
+    ],
     "lotte": [
      "가산디지털",
      "가양",
@@ -1672,6 +5502,53 @@
      "중랑",
      "청량리"
     ],
+    "megabox": [
+     "강남",
+     "구의이스트폴",
+     "더부티크목동현대백화점",
+     "마곡",
+     "목동",
+     "상봉",
+     "상암월드컵경기장",
+     "센트럴",
+     "송파파크하비오",
+     "이수",
+     "코엑스",
+     "홍대(아니메)",
+     "화곡"
+    ],
+    "indie": [
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "하이라이트라이츠고온어게인인시네마@2026-11-11",
+   "key": "하이라이트라이츠고온어게인인시네마",
+   "title": "하이라이트- 라이츠 고 온, 어게인 인 시네마",
+   "kind": "new",
+   "date": "2026-11-11",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "방학",
+     "상봉",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계"
+    ],
+    "lotte": [],
     "megabox": [],
     "indie": []
    },
@@ -1700,15 +5577,30 @@
     "director": "이일하"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "대학로",
+     "동대문",
+     "압구정",
+     "용산아이파크몰"
+    ],
     "lotte": [
      "건대입구",
      "노원",
      "신도림",
      "월드타워"
     ],
-    "megabox": [],
-    "indie": []
+    "megabox": [
+     "마곡",
+     "상암월드컵경기장",
+     "이수",
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아트하우스모모"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -1735,15 +5627,223 @@
     "director": "노영완"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "대학로",
+     "압구정",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": [
+     "라이카시네마"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "다시낭독@2026-11-12",
+   "key": "다시낭독",
+   "title": "다시 낭독",
+   "kind": "new",
+   "date": "2026-11-12",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "강변"
+    ],
     "lotte": [],
     "megabox": [],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "크레센도@2026-11-12",
+   "key": "크레센도",
+   "title": "크레센도",
+   "kind": "re",
+   "date": "2026-11-12",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2019,
+   "kobis": {
+    "movieCd": "20200416",
+    "title": "크레센도",
+    "titleEn": "Crescendo",
+    "openDt": "2021-06-24",
+    "prdtYear": 2019,
+    "nation": "독일",
+    "genre": "드라마",
+    "director": "드로르 자하비"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "피가로의결혼@themet@2026-11-12",
+   "key": "피가로의결혼@themet",
+   "title": "피가로의 결혼 @The Met",
+   "kind": "new",
+   "date": "2026-11-12",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "더부티크목동현대백화점",
+     "센트럴",
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "같은계절을보낸다는건@2026-11-13",
+   "key": "같은계절을보낸다는건",
+   "title": "같은 계절을 보낸다는 건",
+   "kind": "new",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20264139",
+    "title": "같은 계절을 보낸다는 건",
+    "titleEn": "Living Through the Same Seasons",
+    "openDt": null,
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "고승현"
+   },
+   "theaters": {
+    "cgv": [
+     "동대문"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "붉은안경@2026-11-13",
+   "key": "붉은안경",
+   "title": "붉은 안경",
+   "kind": "re",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1987,
+   "kobis": {
+    "movieCd": "20268304",
+    "title": "붉은 안경",
+    "titleEn": "The Red Spectacles",
+    "openDt": null,
+    "prdtYear": 1987,
+    "nation": "일본",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "빅컨츄리@2026-11-13",
+   "key": "빅컨츄리",
+   "title": "빅 컨츄리",
+   "kind": "new",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "낭만극장"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "오수정@2026-11-13",
+   "key": "오수정",
+   "title": "오! 수정",
+   "kind": "re",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2000,
+   "kobis": {
+    "movieCd": "20000018",
+    "title": "오! 수정",
+    "titleEn": "Virgin Stripped Bare By Her Bachelors",
+    "openDt": "2000-05-27",
+    "prdtYear": 2000,
+    "nation": "한국",
+    "genre": "멜로/로맨스",
+    "director": "홍상수"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "카라간다1994워페어@kobis-20268228",
@@ -1776,6 +5876,130 @@
    "lastSeen": null
   },
   {
+   "id": "투어스브이알콘서트러쉬로드@2026-11-13",
+   "key": "투어스브이알콘서트러쉬로드",
+   "title": "투어스 브이알 콘서트 : 러쉬로드",
+   "kind": "new",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20261694",
+    "title": "투어스 브이알 콘서트 : 러쉬로드",
+    "titleEn": "TWS VR CONCERT : RUSH ROAD",
+    "openDt": "2026-03-04",
+    "prdtYear": 2026,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "김지애"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "코엑스"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "파르테노페@2026-11-13",
+   "key": "파르테노페",
+   "title": "파르테노페",
+   "kind": "re",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2024,
+   "kobis": {
+    "movieCd": "20257229",
+    "title": "파르테노페",
+    "titleEn": "Parthenope",
+    "openDt": "2025-09-24",
+    "prdtYear": 2024,
+    "nation": "이탈리아",
+    "genre": "드라마",
+    "director": "파올로 소렌티노"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "호수@2026-11-13",
+   "key": "호수",
+   "title": "호수",
+   "kind": "new",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268296",
+    "title": "호수",
+    "titleEn": "le lac",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "스위스",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "sumbakkokjil2rescene@2026-11-13",
+   "key": "sumbakkokjil2rescene",
+   "title": "SUMBAKKOKJIL2 - RESCENE",
+   "kind": "new",
+   "date": "2026-11-13",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": null,
+   "theaters": {
+    "cgv": [
+     "강남",
+     "강변",
+     "연남",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
    "id": "극장판마카앤로니기억탐험대소동@kobis-20267846",
    "key": "극장판마카앤로니기억탐험대소동",
    "title": "극장판 마카앤로니: 기억탐험 대소동!",
@@ -1795,15 +6019,215 @@
     "director": "우경민"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "고덕강일",
+     "상봉",
+     "영등포타임스퀘어",
+     "왕십리",
+     "용산아이파크몰",
+     "중계"
+    ],
     "lotte": [],
     "megabox": [],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "서서히사라지는밤@2026-11-14",
+   "key": "서서히사라지는밤",
+   "title": "서서히 사라지는 밤",
+   "kind": "new",
+   "date": "2026-11-14",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20267882",
+    "title": "서서히 사라지는 밤",
+    "titleEn": "The Night Is Fading Away",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "아르헨티나",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "쳐다보지마라@2026-11-14",
+   "key": "쳐다보지마라",
+   "title": "쳐다보지 마라",
+   "kind": "re",
+   "date": "2026-11-14",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 1973,
+   "kobis": {
+    "movieCd": "20156182",
+    "title": "쳐다보지 마라 ",
+    "titleEn": "Don't Look Now",
+    "openDt": null,
+    "prdtYear": 1973,
+    "nation": "영국",
+    "genre": "미스터리",
+    "director": "니콜라스 로에그"
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "키메라@2026-11-14",
+   "key": "키메라",
+   "title": "키메라",
+   "kind": "re",
+   "date": "2026-11-14",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2023,
+   "kobis": {
+    "movieCd": "20235841",
+    "title": "키메라",
+    "titleEn": "La Chimera",
+    "openDt": "2024-04-03",
+    "prdtYear": 2023,
+    "nation": "이탈리아",
+    "genre": "드라마",
+    "director": "알리체 로르와커"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [],
+    "indie": [
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "흘려보낸여름@2026-11-14",
+   "key": "흘려보낸여름",
+   "title": "흘려보낸 여름",
+   "kind": "new",
+   "date": "2026-11-14",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20265064",
+    "title": "흘려보낸 여름",
+    "titleEn": "The Summer That Slipped Away",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "이선연"
+   },
+   "theaters": {
+    "cgv": [
+     "동대문"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "러닝타임은77분@2026-11-15",
+   "key": "러닝타임은77분",
+   "title": "러닝타임은 77분",
+   "kind": "new",
+   "date": "2026-11-15",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20247463",
+    "title": "러닝타임은 77분",
+    "titleEn": "77 Minutes",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "한국",
+    "genre": "드라마",
+    "director": "정하린"
+   },
+   "theaters": {
+    "cgv": [
+     "동대문"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "시인@2026-11-15",
+   "key": "시인",
+   "title": "시인",
+   "kind": "new",
+   "date": "2026-11-15",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": null,
+   "kobis": {
+    "movieCd": "20268295",
+    "title": "시인",
+    "titleEn": "A Poet",
+    "openDt": null,
+    "prdtYear": 2025,
+    "nation": "콜롬비아",
+    "genre": "드라마",
+    "director": ""
+   },
+   "theaters": {
+    "cgv": [
+     "압구정"
+    ],
+    "lotte": [],
+    "megabox": [],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "트레인스포팅@2026-11-15",
@@ -1825,12 +6249,57 @@
     "director": "대니 보일"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "강변",
+     "대학로",
+     "동대문",
+     "압구정",
+     "용산아이파크몰"
+    ],
     "lotte": [
      "월드타워"
     ],
+    "megabox": [
+     "군자",
+     "코엑스"
+    ],
+    "indie": [
+     "더숲아트시네마",
+     "라이카시네마",
+     "아트하우스모모"
+    ]
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-09",
+   "lastSeen": "2026-11-09"
+  },
+  {
+   "id": "포르토@2026-11-15",
+   "key": "포르토",
+   "title": "포르토",
+   "kind": "re",
+   "date": "2026-11-15",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2016,
+   "kobis": {
+    "movieCd": "20170005",
+    "title": "포르토",
+    "titleEn": "Porto",
+    "openDt": "2018-01-31",
+    "prdtYear": 2016,
+    "nation": "프랑스",
+    "genre": "드라마",
+    "director": "게이브 클링거"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
     "megabox": [],
-    "indie": []
+    "indie": [
+     "아트하우스모모"
+    ]
    },
    "playing": true,
    "scheduledOnly": false,
@@ -2101,13 +6570,15 @@
    "theaters": {
     "cgv": [],
     "lotte": [],
-    "megabox": [],
+    "megabox": [
+     "코엑스"
+    ],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "심야근무@kobis-20266362",
@@ -2669,15 +7140,17 @@
     "director": "올리비아 와일드"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "용산아이파크몰"
+    ],
     "lotte": [],
     "megabox": [],
     "indie": []
    },
-   "playing": false,
-   "scheduledOnly": true,
+   "playing": true,
+   "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": null
+   "lastSeen": "2026-11-09"
   },
   {
    "id": "유레카@kobis-20235822",
