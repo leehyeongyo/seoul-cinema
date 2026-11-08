@@ -1,0 +1,50 @@
+name: 개봉 달력 업데이트
+
+on:
+  schedule:
+    - cron: '0 20 * * *' # 한국시간 매일 새벽 5시 (GitHub 사정으로 조금 늦어질 수 있음)
+  workflow_dispatch: # Actions 탭에서 직접 실행 가능
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-calendar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 극장 일정 수집
+        id: collect
+        continue-on-error: true
+        env:
+          KOBIS_KEY: ${{ secrets.KOBIS_KEY }}
+        run: node scripts/update.mjs
+
+      - name: 결과 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/films.json
+          if git diff --cached --quiet; then
+            echo "바뀐 내용 없음"
+          else
+            git commit -m "개봉 달력 $(TZ=Asia/Seoul date +%F)"
+            git pull --rebase
+            git push
+          fi
+
+      - name: 일부 수집 실패 알림
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo "::warning::일부 극장 정보를 가져오지 못했어요. '극장 일정 수집' 단계 로그를 확인하세요."
+          exit 1
