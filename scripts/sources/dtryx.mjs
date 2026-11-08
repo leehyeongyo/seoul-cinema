@@ -1,5 +1,6 @@
 // 디트릭스: 독립·예술영화관 공용 예매 플랫폼의 공개 조회 경로
-import { UA, dashed, fetchJson, mapPool, summarize } from '../lib/util.mjs';
+import { UA, compact, dashed, fetchJson, mapPool, summarize } from '../lib/util.mjs';
+import { relayGet, directThenRelay } from '../lib/relay.mjs';
 
 export const id = 'dtryx';
 const BASE = 'https://api.dtryx.com/dtryx/cms/thirdparty/movie';
@@ -17,8 +18,11 @@ async function call(endpoint, guid, params) {
   return Array.isArray(json.Recordset) ? json.Recordset : [];
 }
 
-export async function collect({ dates, config }) {
+async function direct({ dates, config }) {
   const theaters = config.dtryxTheaters || [];
+  // 접속 자체가 되는지 먼저 한 번 확인 (막혀 있으면 바로 중계로)
+  await call('third-party-type2-timetable-play-date-list', GUID.playDates,
+    { BrandCd: theaters[0].brand, CinemaCd: theaters[0].code, MovieCd: '' });
   const window = new Set(dates);
   const plan = await mapPool(theaters, config.concurrency, config.delayMs, async (t) => {
     try {
@@ -41,3 +45,18 @@ export async function collect({ dates, config }) {
   });
   return summarize(results, theaters.length);
 }
+
+async function viaRelay({ dates, config }) {
+  const theaters = config.dtryxTheaters || [];
+  const jobs = theaters.flatMap((t) => dates.map((d) => ({ t, d })));
+  const results = await mapPool(jobs, config.relayConcurrency, config.relayDelayMs, async ({ t, d }) => {
+    const r = await relayGet(config, '/api/dtryx/seats',
+      { cinemaCode: t.code, brandCode: t.brand, playDate: compact(d), limit: '200' });
+    const titles = (r.showtimes || []).map((x) => x.movieName);
+    return [...new Set(titles.filter(Boolean))].map((title) =>
+      ({ chain: 'indie', theater: t.name, title, playDate: d }));
+  });
+  return summarize(results, theaters.length);
+}
+
+export const collect = (ctx) => directThenRelay(ctx, direct, viaRelay);

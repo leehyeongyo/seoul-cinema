@@ -40,8 +40,8 @@ for (const src of [cgv, lotte, megabox, dtryx]) {
     const r = MOCK ? mock.collect(src.id, dates, today) : await src.collect({ dates, config });
     entries.push(...r.entries);
     for (const h of r.releaseHints || []) releaseHints.set(normalizeTitle(h.title).key, h.date);
-    status[src.id] = { ok: true, theaters: r.theaters, showings: r.entries.length, warning: r.warning || null };
-    log(`✓ ${src.id}: 극장 ${r.theaters}곳, ${r.entries.length}건${r.warning ? ` (주의: ${r.warning})` : ''} ${Date.now() - started}ms`);
+    status[src.id] = { ok: true, theaters: r.theaters, showings: r.entries.length, warning: r.warning || null, route: r.route || 'direct' };
+    log(`✓ ${src.id}${r.route === 'relay' ? '(중계)' : ''}: 극장 ${r.theaters}곳, ${r.entries.length}건${r.warning ? ` (주의: ${r.warning})` : ''} ${Date.now() - started}ms`);
   } catch (error) {
     status[src.id] = { ok: false, error: error.message };
     log(`✗ ${src.id}: ${error.message}`);

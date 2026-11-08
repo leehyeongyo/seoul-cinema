@@ -28,9 +28,18 @@ export async function fetchJson(url, init = {}, { timeout = 15000, retries = 1 }
     const timer = setTimeout(() => controller.abort(), timeout);
     try {
       const res = await fetch(url, { ...init, signal: controller.signal });
-      if (res.status >= 500 && attempt < retries) throw new Error(`HTTP ${res.status}`);
-      if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { fatal: true });
       const text = await res.text();
+      if (!res.ok) {
+        let detail = '';
+        try { detail = JSON.parse(text)?.error?.message || ''; } catch { /* HTML 등 */ }
+        const error = new Error(`HTTP ${res.status}${detail ? ` ${detail}` : ''}`);
+        if (res.status === 429 && attempt < retries) {
+          await sleep(Math.min(60, Number(res.headers.get('retry-after')) || 20) * 1000);
+          throw error;
+        }
+        if (res.status >= 500 && attempt < retries) throw error;
+        throw Object.assign(error, { fatal: true });
+      }
       try {
         return JSON.parse(text);
       } catch {
