@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T17:13:23.686Z",
+ "updatedAt": "2026-11-08T17:34:55.126Z",
  "today": "2026-11-09",
  "startedOn": "2026-11-09",
  "status": {
@@ -24,7 +24,7 @@
   "kobis": {
    "ok": true,
    "movies": 1898,
-   "lookups": 9
+   "lookups": 0
   }
  },
  "films": [
