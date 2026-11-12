@@ -1,40 +1,40 @@
 {
- "updatedAt": "2026-11-11T00:38:59.272Z",
- "today": "2026-11-11",
+ "updatedAt": "2026-11-12T02:00:06.218Z",
+ "today": "2026-11-12",
  "startedOn": "2026-11-09",
  "status": {
   "cgv": {
    "ok": true,
    "theaters": 28,
-   "showings": 1171,
-   "warning": "224건 중 87건 실패 (HTTP 502 CGV 릴레이 요청에 실패했습니다.)",
+   "showings": 1239,
+   "warning": "224건 중 74건 실패 (HTTP 502 CGV 릴레이 요청에 실패했습니다.)",
    "route": "relay"
   },
   "lotte": {
    "ok": true,
    "theaters": 22,
-   "showings": 1054,
+   "showings": 1281,
    "warning": null,
    "route": "direct"
   },
   "megabox": {
    "ok": true,
    "theaters": 16,
-   "showings": 1117,
+   "showings": 1240,
    "warning": null,
    "route": "direct"
   },
   "dtryx": {
    "ok": true,
    "theaters": 7,
-   "showings": 314,
+   "showings": 288,
    "warning": null,
    "route": "relay"
   },
   "kobis": {
    "ok": true,
    "movies": 1902,
-   "lookups": 6
+   "lookups": 1
   }
  },
  "films": [
@@ -67,14 +67,15 @@
      "목동",
      "상봉",
      "상암월드컵경기장",
-     "코엑스"
+     "코엑스",
+     "홍대(아니메)"
     ],
     "indie": []
    },
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "호프@2026-07-15",
@@ -115,7 +116,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "스파이더맨브랜드뉴데이@2026-07-29",
@@ -147,7 +148,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "어떻게해야했을까@2026-07-29",
@@ -171,9 +172,7 @@
    "theaters": {
     "cgv": [],
     "lotte": [],
-    "megabox": [
-     "강동"
-    ],
+    "megabox": [],
     "indie": [
      "더숲아트시네마",
      "라이카시네마"
@@ -182,7 +181,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "오디세이@2026-08-05",
@@ -235,7 +234,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "백룸익스텐디드컷@2026-08-19",
@@ -258,6 +257,7 @@
    },
    "theaters": {
     "cgv": [
+     "강남",
      "고덕강일",
      "미아",
      "상봉",
@@ -273,7 +273,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "옵세션@2026-09-02",
@@ -306,7 +306,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "더드라마@2026-09-09",
@@ -338,7 +338,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "웃으면복이와요내이름은수한무@2026-09-09",
@@ -370,7 +370,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "청년조용기신을저주하던청년시대를긋는종이되다@2026-09-11",
@@ -402,7 +402,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "인턴@2026-09-16",
@@ -466,7 +466,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "암살자@2026-09-23",
@@ -491,8 +491,9 @@
     "cgv": [
      "고덕강일",
      "구로",
+     "미아",
      "수유",
-     "왕십리"
+     "용산아이파크몰"
     ],
     "lotte": [
      "가산디지털",
@@ -520,7 +521,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "어벤져스엔드게임앙코르@2026-09-23",
@@ -552,7 +553,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "타짜벨제붑의노래@2026-09-23",
@@ -596,7 +597,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "극장판치이카와인어섬의비밀@2026-09-30",
@@ -693,7 +694,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "부활남더레드@2026-09-30",
@@ -725,7 +726,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "셀린느와줄리배타러가다@2026-09-30",
@@ -757,7 +758,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "이방인@2026-09-30",
@@ -792,7 +793,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "디거@2026-10-03",
@@ -814,7 +815,9 @@
     "director": "알레한드로 곤잘레스 이냐리투"
    },
    "theaters": {
-    "cgv": [],
+    "cgv": [
+     "용산아이파크몰"
+    ],
     "lotte": [],
     "megabox": [
      "군자",
@@ -828,7 +831,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "룩백@2026-10-08",
@@ -877,7 +880,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "전자오락수호대@2026-10-14",
@@ -918,7 +921,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "침묵의빛@2026-10-14",
@@ -952,7 +955,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "헤븐노우즈왓@2026-10-14",
@@ -985,7 +988,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "구제역에서살아돌아온돼지@2026-10-21",
@@ -1019,7 +1022,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "눈둘데가없네@2026-10-21",
@@ -1043,6 +1046,7 @@
    "theaters": {
     "cgv": [
      "동대문",
+     "신촌아트레온",
      "용산아이파크몰"
     ],
     "lotte": [],
@@ -1057,7 +1061,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "레위기@2026-10-21",
@@ -1091,14 +1095,13 @@
     ],
     "indie": [
      "더숲아트시네마",
-     "라이카시네마",
-     "아트하우스모모"
+     "라이카시네마"
     ]
    },
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "부에노스아이레스여안녕@2026-10-21",
@@ -1130,7 +1133,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "실낙원@2026-10-21",
@@ -1157,6 +1160,7 @@
      "월드타워"
     ],
     "megabox": [
+     "상봉",
      "상암월드컵경기장"
     ],
     "indie": []
@@ -1164,7 +1168,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "씽씽@2026-10-21",
@@ -1196,7 +1200,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "여전히찬란하게@2026-10-21",
@@ -1236,7 +1240,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "차오@2026-10-21",
@@ -1270,7 +1274,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "클레이페이스@2026-10-21",
@@ -1293,7 +1297,6 @@
    },
    "theaters": {
     "cgv": [
-     "강변",
      "상봉",
      "연남",
      "용산아이파크몰"
@@ -1311,7 +1314,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "킬링타임@2026-10-21",
@@ -1375,7 +1378,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "그대별처럼@2026-10-28",
@@ -1402,6 +1405,7 @@
      "가산디지털",
      "건대입구",
      "김포공항",
+     "노원",
      "도곡",
      "독산",
      "수유",
@@ -1420,7 +1424,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "메릴스트립프로젝트@2026-10-28",
@@ -1456,7 +1460,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "브루넬로우아한선구자@2026-10-28",
@@ -1531,7 +1535,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "수능출제의비밀@2026-10-28",
@@ -1557,8 +1561,7 @@
      "고덕강일",
      "구로",
      "등촌",
-     "수유",
-     "연남"
+     "수유"
     ],
     "lotte": [
      "가양",
@@ -1583,7 +1586,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "어머니의가계부@2026-10-28",
@@ -1615,7 +1618,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "에디앨리스테이크@2026-10-28",
@@ -1649,7 +1652,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "요루시카라이브@2026-10-28",
@@ -1673,10 +1676,6 @@
    "theaters": {
     "cgv": [
      "강남",
-     "강변",
-     "여의도",
-     "영등포타임스퀘어",
-     "왕십리",
      "용산아이파크몰",
      "홍대"
     ],
@@ -1684,10 +1683,10 @@
     "megabox": [],
     "indie": []
    },
-   "playing": false,
+   "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-10"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "이성과감성@2026-10-28",
@@ -1721,7 +1720,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "장님버드나무와잠자는여자@2026-10-28",
@@ -1755,7 +1754,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "하트오브비스트@2026-10-28",
@@ -1842,7 +1841,6 @@
      "송파파크하비오",
      "이수",
      "코엑스",
-     "홍대(아니메)",
      "화곡"
     ],
     "indie": [
@@ -1852,7 +1850,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "흐르는여정@2026-10-28",
@@ -1875,8 +1873,8 @@
    },
    "theaters": {
     "cgv": [
+     "대학로",
      "동대문",
-     "신촌아트레온",
      "용산아이파크몰"
     ],
     "lotte": [
@@ -1893,7 +1891,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "프레지던트박정희@2026-10-29",
@@ -1966,7 +1964,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "낮과밤은서로에게@2026-11-04",
@@ -2019,7 +2017,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "변이@2026-11-04",
@@ -2056,7 +2054,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "와일드호스나인@2026-11-04",
@@ -2083,7 +2081,6 @@
      "명동",
      "불광",
      "압구정",
-     "영등포타임스퀘어",
      "왕십리",
      "용산아이파크몰"
     ],
@@ -2119,7 +2116,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "욕쟁이할머니@2026-11-04",
@@ -2144,7 +2141,6 @@
     "cgv": [],
     "lotte": [],
     "megabox": [
-     "강남",
      "구의이스트폴",
      "군자",
      "더부티크목동현대백화점",
@@ -2160,7 +2156,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "인생세탁소@2026-11-04",
@@ -2196,7 +2192,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "잠들수없는집@2026-11-04",
@@ -2228,7 +2224,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "최종면접@2026-11-04",
@@ -2323,7 +2319,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "명탐정코난30호살인사건@2026-11-05",
@@ -2380,7 +2376,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "모자쓴고양이@2026-11-06",
@@ -2403,9 +2399,8 @@
    },
    "theaters": {
     "cgv": [
-     "강남",
      "강변",
-     "고덕강일",
+     "구로",
      "미아",
      "방학",
      "불광",
@@ -2440,6 +2435,8 @@
     "megabox": [
      "구의이스트폴",
      "군자",
+     "더부티크목동현대백화점",
+     "목동",
      "상봉",
      "상암월드컵경기장",
      "송파파크하비오",
@@ -2453,7 +2450,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "걸스앤보이즈@2026-11-09",
@@ -2517,7 +2514,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "극장판뱅드림잇츠마이고전편봄의양지방황하는고양이@2026-11-09",
@@ -2549,7 +2546,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "극장판뱅드림잇츠마이고후편노래하자우리가될수있는노래필름라이브@2026-11-09",
@@ -2581,7 +2578,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "극장판체인소맨레제편@2026-11-09",
@@ -2614,7 +2611,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "꿈과희망사이에서@2026-11-09",
@@ -2669,7 +2666,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "단편경쟁4제6회성북청춘불패영화제@2026-11-09",
@@ -2850,6 +2847,7 @@
    },
    "theaters": {
     "cgv": [
+     "강변",
      "압구정"
     ],
     "lotte": [],
@@ -2861,7 +2859,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "박하사탕@2026-11-09",
@@ -2953,7 +2951,6 @@
     "cgv": [],
     "lotte": [
      "김포공항",
-     "노원",
      "도곡",
      "신림",
      "월드타워",
@@ -2967,7 +2964,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "비밀상영회@2026-11-09",
@@ -3023,7 +3020,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "삭제된소년@2026-11-09",
@@ -3078,7 +3075,6 @@
    },
    "theaters": {
     "cgv": [
-     "강변",
      "압구정"
     ],
     "lotte": [],
@@ -3094,7 +3090,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "안드레아셰니에@themet@2026-11-09",
@@ -3156,7 +3152,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "암스테르담시민이예술의주인공이되다@2026-11-09",
@@ -3261,9 +3257,11 @@
    "theaters": {
     "cgv": [
      "강남",
+     "강변",
      "고덕강일",
      "구로",
      "등촌",
+     "방학",
      "상봉",
      "신촌아트레온",
      "영등포타임스퀘어",
@@ -3279,7 +3277,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "쿵푸허슬@2026-11-09",
@@ -3354,7 +3352,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "프란체스코@2026-11-09",
@@ -3386,7 +3384,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "프레데터죽음의땅@2026-11-09",
@@ -3425,7 +3423,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "프리즘오브컬러@2026-11-09",
@@ -3825,7 +3823,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "스키프@2026-11-10",
@@ -3985,7 +3983,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "한국단편경쟁2@2026-11-10",
@@ -4081,8 +4079,11 @@
      "구로",
      "대학로",
      "등촌",
+     "미아",
+     "상봉",
      "수유",
      "연남",
+     "영등포타임스퀘어",
      "용산아이파크몰"
     ],
     "lotte": [],
@@ -4092,7 +4093,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "강원도의힘@2026-11-11",
@@ -4125,7 +4126,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "거짓말4k무삭제완전판@kobis-20267589",
@@ -4165,7 +4166,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "골든보이@2026-11-11",
@@ -4201,7 +4202,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "극장판카드캡터체리봉인된카드@kobis-20001391",
@@ -4230,8 +4231,10 @@
      "구로",
      "대학로",
      "등촌",
+     "방학",
      "상봉",
      "성신여대입구",
+     "수유",
      "신촌아트레온",
      "연남",
      "영등포타임스퀘어",
@@ -4247,7 +4250,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "긴키지방의어느장소에대하여@2026-11-11",
@@ -4275,6 +4278,8 @@
      "구로",
      "대학로",
      "등촌",
+     "미아",
+     "상봉",
      "수유",
      "연남",
      "용산아이파크몰"
@@ -4286,7 +4291,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "노이즈@2026-11-11",
@@ -4309,10 +4314,12 @@
    },
    "theaters": {
     "cgv": [
+     "강남",
      "고덕강일",
      "미아",
      "상봉",
      "성신여대입구",
+     "수유",
      "신촌아트레온",
      "영등포타임스퀘어",
      "왕십리"
@@ -4324,7 +4331,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "단편경쟁7제6회성북청춘불패영화제@2026-11-11",
@@ -4344,7 +4351,7 @@
      "아리랑시네센터"
     ]
    },
-   "playing": true,
+   "playing": false,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
    "lastSeen": "2026-11-11"
@@ -4410,7 +4417,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "듄@2026-11-11",
@@ -4446,7 +4453,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "드골저항의시작@2026-11-11",
@@ -4494,7 +4501,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "라라랜드@2026-11-11",
@@ -4531,6 +4538,7 @@
      "상봉",
      "수유",
      "신촌아트레온",
+     "압구정",
      "여의도",
      "영등포타임스퀘어",
      "왕십리",
@@ -4590,7 +4598,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "마더메리@2026-11-11",
@@ -4649,7 +4657,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "마리앙투아네트@2026-11-11",
@@ -4691,7 +4699,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "마린알솝@kobis-20257381",
@@ -4729,7 +4737,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "밀양@2026-11-11",
@@ -4764,7 +4772,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "베리베리스트레인지러브@kobis-20268218",
@@ -4796,6 +4804,7 @@
     "lotte": [],
     "megabox": [],
     "indie": [
+     "더숲아트시네마",
      "라이카시네마",
      "아리랑시네센터"
     ]
@@ -4803,7 +4812,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "삼춘어디감수광@kobis-20264929",
@@ -4839,7 +4848,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "스크루지크리스마스캐럴@2026-11-11",
@@ -4921,7 +4930,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "스트레인저무황인담@2026-11-11",
@@ -4966,7 +4975,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "여자는남자의미래다@2026-11-11",
@@ -4999,7 +5008,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "울프워크스@2026-11-11",
@@ -5033,7 +5042,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "이상가족@2026-11-11",
@@ -5062,7 +5071,7 @@
     "megabox": [],
     "indie": []
    },
-   "playing": true,
+   "playing": false,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
    "lastSeen": "2026-11-11"
@@ -5098,7 +5107,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "처녀자살소동@kobis-19998544",
@@ -5163,7 +5172,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "코리안블랙아이즈@kobis-20233192",
@@ -5213,7 +5222,7 @@
      "아리랑시네센터"
     ]
    },
-   "playing": true,
+   "playing": false,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
    "lastSeen": "2026-11-11"
@@ -5310,7 +5319,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "프레셔@2026-11-11",
@@ -5393,7 +5402,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "하이라이트라이츠고온어게인인시네마@2026-11-11",
@@ -5427,7 +5436,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "호루몽@2026-11-11",
@@ -5483,7 +5492,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "후광@kobis-20259725",
@@ -5519,13 +5528,14 @@
      "코엑스"
     ],
     "indie": [
+     "더숲아트시네마",
      "라이카시네마"
     ]
    },
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "2026아시아프로야구챔피언십호주vs대한민국@2026-11-12",
@@ -5548,7 +5558,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-10",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "다시낭독@2026-11-12",
@@ -5571,7 +5581,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "크레센도@2026-11-12",
@@ -5603,7 +5613,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "피가로의결혼@themet@2026-11-12",
@@ -5628,7 +5638,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "2026아시아프로야구챔피언십대한민국vs일본@2026-11-13",
@@ -5651,7 +5661,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-10",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "같은계절을보낸다는건@2026-11-13",
@@ -5683,7 +5693,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "붉은안경@2026-11-13",
@@ -5715,7 +5725,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "빅컨츄리@2026-11-13",
@@ -5738,7 +5748,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "오수정@2026-11-13",
@@ -5771,7 +5781,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "카라간다1994워페어@kobis-20268228",
@@ -5833,7 +5843,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "파르테노페@2026-11-13",
@@ -5865,7 +5875,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "호수@2026-11-13",
@@ -5897,7 +5907,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "sumbakkokjil2rescene@2026-11-13",
@@ -5925,7 +5935,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "2026아시아프로야구챔피언십대만vs대한민국@2026-11-14",
@@ -5948,7 +5958,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-10",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "극장판마카앤로니기억탐험대소동@kobis-20267846",
@@ -5973,12 +5983,16 @@
     "cgv": [
      "강변",
      "고덕강일",
+     "미아",
+     "방학",
      "불광",
      "상봉",
+     "수유",
      "영등포타임스퀘어",
      "왕십리",
      "용산아이파크몰",
-     "중계"
+     "중계",
+     "천호"
     ],
     "lotte": [],
     "megabox": [],
@@ -5987,7 +6001,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "서서히사라지는밤@2026-11-14",
@@ -6019,7 +6033,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "스윙걸즈@2026-11-14",
@@ -6046,7 +6060,9 @@
      "압구정"
     ],
     "lotte": [],
-    "megabox": [],
+    "megabox": [
+     "코엑스"
+    ],
     "indie": [
      "더숲아트시네마",
      "라이카시네마"
@@ -6055,7 +6071,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "쳐다보지마라@2026-11-14",
@@ -6087,7 +6103,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "키메라@2026-11-14",
@@ -6119,7 +6135,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "흘려보낸여름@2026-11-14",
@@ -6151,7 +6167,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "러닝타임은77분@2026-11-15",
@@ -6183,7 +6199,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "시사회@2026-11-15",
@@ -6203,7 +6219,7 @@
     "megabox": [],
     "indie": []
    },
-   "playing": true,
+   "playing": false,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
    "lastSeen": "2026-11-11"
@@ -6238,7 +6254,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "트레인스포팅@2026-11-15",
@@ -6262,7 +6278,8 @@
    "theaters": {
     "cgv": [
      "강변",
-     "압구정"
+     "압구정",
+     "용산아이파크몰"
     ],
     "lotte": [
      "월드타워"
@@ -6280,7 +6297,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "포르토@2026-11-15",
@@ -6312,7 +6329,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "런던산업과제국이만든새로운시선@2026-11-16",
@@ -6335,7 +6352,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-10",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "철화의박차@2026-11-17",
@@ -6367,7 +6384,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-10",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "광안세자의여자@2026-11-18",
@@ -6399,7 +6416,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "모두가나의아들@2026-11-18",
@@ -6435,7 +6452,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "뮤티니@kobis-20268058",
@@ -6527,7 +6544,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "옆에서숨만쉬어도좋아@kobis-20231793",
@@ -6590,7 +6607,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "임영웅|아임히어로더스타디움2@kobis-20268264",
@@ -6648,6 +6665,7 @@
      "성신여대입구",
      "수유",
      "신촌아트레온",
+     "압구정",
      "여의도",
      "연남",
      "영등포타임스퀘어",
@@ -6666,7 +6684,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "저스트플레이데드@kobis-20268545",
@@ -6728,7 +6746,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "폭설@kobis-20247221",
@@ -6782,7 +6800,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-11",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "헝거게임50번째추첨의날@kobis-20267121",
@@ -6834,7 +6852,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "심야근무@kobis-20266362",
@@ -6865,6 +6883,38 @@
    "scheduledOnly": true,
    "firstSeen": "2026-11-09",
    "lastSeen": null
+  },
+  {
+   "id": "언노운@2026-11-19",
+   "key": "언노운",
+   "title": "언노운",
+   "kind": "re",
+   "date": "2026-11-19",
+   "dateSource": "schedule",
+   "approx": false,
+   "originalYear": 2010,
+   "kobis": {
+    "movieCd": "20119429",
+    "title": "언노운",
+    "titleEn": "Unknown",
+    "openDt": "2011-02-17",
+    "prdtYear": 2010,
+    "nation": "미국",
+    "genre": "드라마",
+    "director": "자움 콜렛 세라"
+   },
+   "theaters": {
+    "cgv": [],
+    "lotte": [],
+    "megabox": [
+     "이수"
+    ],
+    "indie": []
+   },
+   "playing": true,
+   "scheduledOnly": false,
+   "firstSeen": "2026-11-12",
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "고인아파트@kobis-20252688",
@@ -7436,7 +7486,7 @@
    "playing": true,
    "scheduledOnly": false,
    "firstSeen": "2026-11-09",
-   "lastSeen": "2026-11-11"
+   "lastSeen": "2026-11-12"
   },
   {
    "id": "유레카@kobis-20235822",
